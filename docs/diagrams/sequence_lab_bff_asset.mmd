@@ -1,0 +1,16 @@
+%%{init: {"theme": "neutral"}}%%
+sequenceDiagram
+  autonumber
+  participant Br as Browser_SPA
+  participant Bff as BFF_lab_server
+  participant Arm as experiments_arm_asset_search
+  participant Src as fontes_arm_sources_Pexels_etc
+  participant Api as APIs_publicas
+  Br->>Bff: POST_api_asset_agent_search
+  Bff->>Arm: search_assets_for_scene
+  Arm->>Src: pedidos_por_fonte
+  Src->>Api: HTTP_busca
+  Api-->>Src: candidatos
+  Src-->>Arm: lista_normalizada
+  Arm-->>Bff: JSON_curado
+  Bff-->>Br: resposta_UI

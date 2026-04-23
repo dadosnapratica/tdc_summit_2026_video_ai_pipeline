@@ -1,0 +1,13 @@
+%%{init: {"theme": "neutral"}}%%
+sequenceDiagram
+  autonumber
+  participant Br as Browser_SPA
+  participant Bff as BFF_lab_server
+  participant Arm as experiments_arm_script_generate
+  participant Oll as Ollama_HTTP_GPU
+  Br->>Bff: POST_api_script_agent_generate
+  Bff->>Arm: generate_script_suggest_angles
+  Arm->>Oll: chat_completions
+  Oll-->>Arm: texto_roteiro_cenas
+  Arm-->>Bff: script_scenes
+  Bff-->>Br: JSON_UI

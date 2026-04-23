@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "notes": "Metadados de cenas (timeline). id = ordem sequencial 1-based; start_s/end_s em segundos; script_part_id liga ao roteiro em 01_scripts/. Cenas 5–7 são extras (sem parte no roteiro de 4 blocos) — tempos após 137s ilustrativos.",
+  "scenes": [
+    {
+      "id": 1,
+      "title": "Night sky with stars",
+      "start_s": 0,
+      "end_s": 23,
+      "script_part_id": "hook"
+    },
+    {
+      "id": 2,
+      "title": "Ancient Egypt, hieroglyphs and temple",
+      "start_s": 23,
+      "end_s": 55,
+      "script_part_id": "ancient_gods"
+    },
+    {
+      "id": 3,
+      "title": "Lightning, storm clouds and night sky",
+      "start_s": 55,
+      "end_s": 96,
+      "script_part_id": "unraveling_myths"
+    },
+    {
+      "id": 4,
+      "title": "Fields, farming and seasons",
+      "start_s": 96,
+      "end_s": 137,
+      "script_part_id": "conclusion"
+    },
+    {
+      "id": 5,
+      "title": "Temples, clocks and zodiac imagery",
+      "start_s": 137,
+      "end_s": 180,
+      "script_part_id": "scene_5"
+    },
+    {
+      "id": 6,
+      "title": "Star trails, telescope and night sky wonder",
+      "start_s": 180,
+      "end_s": 223,
+      "script_part_id": "scene_6"
+    },
+    {
+      "id": 7,
+      "title": "Milky Way, stars and night sky",
+      "start_s": 223,
+      "end_s": 266,
+      "script_part_id": "scene_7"
+    }
+  ]
+}

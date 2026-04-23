@@ -1,0 +1,1446 @@
+{
+  "language": "pt",
+  "duration_s": 96.920125,
+  "words": [
+    {
+      "word": "Imagine",
+      "start": 0.0,
+      "end": 0.24
+    },
+    {
+      "word": "um",
+      "start": 0.24,
+      "end": 0.48
+    },
+    {
+      "word": "céu",
+      "start": 0.48,
+      "end": 0.62
+    },
+    {
+      "word": "noturno,",
+      "start": 0.62,
+      "end": 1.16
+    },
+    {
+      "word": "repleto",
+      "start": 1.32,
+      "end": 1.7
+    },
+    {
+      "word": "de",
+      "start": 1.7,
+      "end": 1.86
+    },
+    {
+      "word": "estrelas",
+      "start": 1.86,
+      "end": 2.28
+    },
+    {
+      "word": "brilhantes.",
+      "start": 2.28,
+      "end": 2.76
+    },
+    {
+      "word": "Por",
+      "start": 3.14,
+      "end": 3.28
+    },
+    {
+      "word": "séculos",
+      "start": 3.28,
+      "end": 3.62
+    },
+    {
+      "word": "humanos",
+      "start": 3.62,
+      "end": 4.1
+    },
+    {
+      "word": "tem",
+      "start": 4.1,
+      "end": 4.46
+    },
+    {
+      "word": "se",
+      "start": 4.46,
+      "end": 4.6
+    },
+    {
+      "word": "perguntado",
+      "start": 4.6,
+      "end": 5.18
+    },
+    {
+      "word": "sobre",
+      "start": 5.18,
+      "end": 5.48
+    },
+    {
+      "word": "o",
+      "start": 5.48,
+      "end": 5.64
+    },
+    {
+      "word": "significado",
+      "start": 5.64,
+      "end": 6.36
+    },
+    {
+      "word": "dessas",
+      "start": 6.36,
+      "end": 6.62
+    },
+    {
+      "word": "luzes",
+      "start": 6.62,
+      "end": 7.06
+    },
+    {
+      "word": "celestes.",
+      "start": 7.06,
+      "end": 7.62
+    },
+    {
+      "word": "Em",
+      "start": 7.98,
+      "end": 8.08
+    },
+    {
+      "word": "alguns",
+      "start": 8.08,
+      "end": 8.34
+    },
+    {
+      "word": "casos,",
+      "start": 8.34,
+      "end": 8.82
+    },
+    {
+      "word": "essas",
+      "start": 9.08,
+      "end": 9.32
+    },
+    {
+      "word": "estrelas",
+      "start": 9.32,
+      "end": 9.9
+    },
+    {
+      "word": "foram",
+      "start": 9.9,
+      "end": 10.14
+    },
+    {
+      "word": "associadas",
+      "start": 10.14,
+      "end": 10.74
+    },
+    {
+      "word": "a",
+      "start": 10.74,
+      "end": 10.98
+    },
+    {
+      "word": "deuses",
+      "start": 10.98,
+      "end": 11.22
+    },
+    {
+      "word": "astrais",
+      "start": 11.22,
+      "end": 11.68
+    },
+    {
+      "word": "antigos,",
+      "start": 11.68,
+      "end": 12.24
+    },
+    {
+      "word": "que",
+      "start": 12.52,
+      "end": 12.58
+    },
+    {
+      "word": "exerciam",
+      "start": 12.58,
+      "end": 13.08
+    },
+    {
+      "word": "influência",
+      "start": 13.08,
+      "end": 13.62
+    },
+    {
+      "word": "sobre",
+      "start": 13.62,
+      "end": 13.96
+    },
+    {
+      "word": "as",
+      "start": 13.96,
+      "end": 14.16
+    },
+    {
+      "word": "vidas",
+      "start": 14.16,
+      "end": 14.48
+    },
+    {
+      "word": "das",
+      "start": 14.48,
+      "end": 14.66
+    },
+    {
+      "word": "pessoas.",
+      "start": 14.66,
+      "end": 15.08
+    },
+    {
+      "word": "Hoje,",
+      "start": 15.58,
+      "end": 15.78
+    },
+    {
+      "word": "vamos",
+      "start": 16.2,
+      "end": 16.2
+    },
+    {
+      "word": "desvendar",
+      "start": 16.2,
+      "end": 16.72
+    },
+    {
+      "word": "os",
+      "start": 16.72,
+      "end": 16.9
+    },
+    {
+      "word": "mitos",
+      "start": 16.9,
+      "end": 17.22
+    },
+    {
+      "word": "desses",
+      "start": 17.22,
+      "end": 17.48
+    },
+    {
+      "word": "deuses",
+      "start": 17.48,
+      "end": 17.92
+    },
+    {
+      "word": "e",
+      "start": 17.92,
+      "end": 18.18
+    },
+    {
+      "word": "compreender",
+      "start": 18.18,
+      "end": 18.6
+    },
+    {
+      "word": "melhor",
+      "start": 18.6,
+      "end": 18.96
+    },
+    {
+      "word": "como",
+      "start": 18.96,
+      "end": 19.26
+    },
+    {
+      "word": "eles",
+      "start": 19.26,
+      "end": 19.42
+    },
+    {
+      "word": "se",
+      "start": 19.42,
+      "end": 19.56
+    },
+    {
+      "word": "encaixam",
+      "start": 19.56,
+      "end": 19.94
+    },
+    {
+      "word": "na",
+      "start": 19.94,
+      "end": 20.08
+    },
+    {
+      "word": "nossa",
+      "start": 20.08,
+      "end": 20.28
+    },
+    {
+      "word": "compreensão",
+      "start": 20.28,
+      "end": 20.88
+    },
+    {
+      "word": "moderna",
+      "start": 20.88,
+      "end": 21.3
+    },
+    {
+      "word": "da",
+      "start": 21.3,
+      "end": 21.44
+    },
+    {
+      "word": "astronomia.",
+      "start": 21.44,
+      "end": 22.08
+    },
+    {
+      "word": "Os",
+      "start": 22.36,
+      "end": 22.48
+    },
+    {
+      "word": "antigos",
+      "start": 22.48,
+      "end": 22.78
+    },
+    {
+      "word": "egípcios",
+      "start": 22.78,
+      "end": 23.26
+    },
+    {
+      "word": "acreditavam",
+      "start": 23.26,
+      "end": 23.96
+    },
+    {
+      "word": "que",
+      "start": 23.96,
+      "end": 24.2
+    },
+    {
+      "word": "o",
+      "start": 24.2,
+      "end": 24.32
+    },
+    {
+      "word": "sol",
+      "start": 24.32,
+      "end": 24.48
+    },
+    {
+      "word": "era",
+      "start": 24.48,
+      "end": 24.62
+    },
+    {
+      "word": "uma",
+      "start": 24.62,
+      "end": 24.76
+    },
+    {
+      "word": "manifestação",
+      "start": 24.76,
+      "end": 25.42
+    },
+    {
+      "word": "do",
+      "start": 25.42,
+      "end": 25.54
+    },
+    {
+      "word": "Deus",
+      "start": 25.54,
+      "end": 25.76
+    },
+    {
+      "word": "Fá",
+      "start": 25.76,
+      "end": 26.04
+    },
+    {
+      "word": "que",
+      "start": 26.04,
+      "end": 26.3
+    },
+    {
+      "word": "governava",
+      "start": 26.3,
+      "end": 26.74
+    },
+    {
+      "word": "a",
+      "start": 26.74,
+      "end": 26.82
+    },
+    {
+      "word": "vida",
+      "start": 26.82,
+      "end": 27.02
+    },
+    {
+      "word": "e",
+      "start": 27.02,
+      "end": 27.32
+    },
+    {
+      "word": "a",
+      "start": 27.32,
+      "end": 27.4
+    },
+    {
+      "word": "morte.",
+      "start": 27.4,
+      "end": 27.78
+    },
+    {
+      "word": "Junto",
+      "start": 27.78,
+      "end": 28.28
+    },
+    {
+      "word": "com",
+      "start": 28.28,
+      "end": 28.44
+    },
+    {
+      "word": "a",
+      "start": 28.44,
+      "end": 28.56
+    },
+    {
+      "word": "Lua,",
+      "start": 28.56,
+      "end": 28.76
+    },
+    {
+      "word": "que",
+      "start": 28.94,
+      "end": 28.98
+    },
+    {
+      "word": "representava",
+      "start": 28.98,
+      "end": 29.56
+    },
+    {
+      "word": "deuses",
+      "start": 29.56,
+      "end": 29.94
+    },
+    {
+      "word": "aizes,",
+      "start": 29.94,
+      "end": 30.28
+    },
+    {
+      "word": "eles",
+      "start": 30.6,
+      "end": 30.72
+    },
+    {
+      "word": "criaram",
+      "start": 30.72,
+      "end": 31.18
+    },
+    {
+      "word": "uma",
+      "start": 31.18,
+      "end": 31.34
+    },
+    {
+      "word": "visão",
+      "start": 31.34,
+      "end": 31.58
+    },
+    {
+      "word": "do",
+      "start": 31.58,
+      "end": 31.76
+    },
+    {
+      "word": "cosmos",
+      "start": 31.76,
+      "end": 32.04
+    },
+    {
+      "word": "em",
+      "start": 32.04,
+      "end": 32.3
+    },
+    {
+      "word": "torno",
+      "start": 32.3,
+      "end": 32.44
+    },
+    {
+      "word": "da",
+      "start": 32.44,
+      "end": 32.6
+    },
+    {
+      "word": "morada",
+      "start": 32.6,
+      "end": 32.94
+    },
+    {
+      "word": "dos",
+      "start": 32.94,
+      "end": 33.14
+    },
+    {
+      "word": "deuses.",
+      "start": 33.14,
+      "end": 33.56
+    },
+    {
+      "word": "Com",
+      "start": 33.88,
+      "end": 33.96
+    },
+    {
+      "word": "as",
+      "start": 33.96,
+      "end": 34.08
+    },
+    {
+      "word": "estrelas",
+      "start": 34.08,
+      "end": 34.5
+    },
+    {
+      "word": "como",
+      "start": 34.5,
+      "end": 34.74
+    },
+    {
+      "word": "guias,",
+      "start": 34.74,
+      "end": 35.22
+    },
+    {
+      "word": "os",
+      "start": 35.4,
+      "end": 35.48
+    },
+    {
+      "word": "antigos",
+      "start": 35.48,
+      "end": 35.86
+    },
+    {
+      "word": "egípcios",
+      "start": 35.86,
+      "end": 36.28
+    },
+    {
+      "word": "puderam",
+      "start": 36.28,
+      "end": 36.74
+    },
+    {
+      "word": "prever",
+      "start": 36.74,
+      "end": 37.02
+    },
+    {
+      "word": "as",
+      "start": 37.02,
+      "end": 37.16
+    },
+    {
+      "word": "estações",
+      "start": 37.16,
+      "end": 37.64
+    },
+    {
+      "word": "do",
+      "start": 37.64,
+      "end": 37.86
+    },
+    {
+      "word": "ano",
+      "start": 37.86,
+      "end": 38.08
+    },
+    {
+      "word": "e",
+      "start": 38.08,
+      "end": 38.32
+    },
+    {
+      "word": "organizar",
+      "start": 38.32,
+      "end": 38.82
+    },
+    {
+      "word": "suas",
+      "start": 38.82,
+      "end": 39.04
+    },
+    {
+      "word": "culturas",
+      "start": 39.04,
+      "end": 39.48
+    },
+    {
+      "word": "em",
+      "start": 39.48,
+      "end": 39.7
+    },
+    {
+      "word": "torno",
+      "start": 39.7,
+      "end": 39.88
+    },
+    {
+      "word": "disso.",
+      "start": 39.88,
+      "end": 40.3
+    },
+    {
+      "word": "Em",
+      "start": 40.64,
+      "end": 40.76
+    },
+    {
+      "word": "resumo,",
+      "start": 40.76,
+      "end": 41.14
+    },
+    {
+      "word": "esses",
+      "start": 41.36,
+      "end": 41.52
+    },
+    {
+      "word": "deuses",
+      "start": 41.52,
+      "end": 41.9
+    },
+    {
+      "word": "astrais",
+      "start": 41.9,
+      "end": 42.34
+    },
+    {
+      "word": "eram",
+      "start": 42.34,
+      "end": 42.58
+    },
+    {
+      "word": "mais",
+      "start": 42.58,
+      "end": 42.84
+    },
+    {
+      "word": "do",
+      "start": 42.84,
+      "end": 42.96
+    },
+    {
+      "word": "que",
+      "start": 42.96,
+      "end": 43.1
+    },
+    {
+      "word": "apenas",
+      "start": 43.1,
+      "end": 43.42
+    },
+    {
+      "word": "mitos,",
+      "start": 43.42,
+      "end": 43.92
+    },
+    {
+      "word": "eram",
+      "start": 44.2,
+      "end": 44.38
+    },
+    {
+      "word": "parte",
+      "start": 44.38,
+      "end": 44.62
+    },
+    {
+      "word": "integrante",
+      "start": 44.62,
+      "end": 45.14
+    },
+    {
+      "word": "da",
+      "start": 45.14,
+      "end": 45.34
+    },
+    {
+      "word": "cultura",
+      "start": 45.34,
+      "end": 45.64
+    },
+    {
+      "word": "e",
+      "start": 45.64,
+      "end": 45.84
+    },
+    {
+      "word": "da",
+      "start": 45.84,
+      "end": 45.92
+    },
+    {
+      "word": "religião",
+      "start": 45.92,
+      "end": 46.4
+    },
+    {
+      "word": "daquele",
+      "start": 46.4,
+      "end": 46.72
+    },
+    {
+      "word": "povo,",
+      "start": 46.72,
+      "end": 47.12
+    },
+    {
+      "word": "massa",
+      "start": 47.36,
+      "end": 47.56
+    },
+    {
+      "word": "muito",
+      "start": 47.56,
+      "end": 47.78
+    },
+    {
+      "word": "a",
+      "start": 47.78,
+      "end": 47.98
+    },
+    {
+      "word": "ser",
+      "start": 47.98,
+      "end": 48.08
+    },
+    {
+      "word": "desvendado",
+      "start": 48.08,
+      "end": 48.58
+    },
+    {
+      "word": "sobre",
+      "start": 48.58,
+      "end": 48.86
+    },
+    {
+      "word": "esses",
+      "start": 48.86,
+      "end": 49.1
+    },
+    {
+      "word": "deuses.",
+      "start": 49.1,
+      "end": 49.54
+    },
+    {
+      "word": "Por",
+      "start": 49.9,
+      "end": 50.0
+    },
+    {
+      "word": "exemplo,",
+      "start": 50.0,
+      "end": 50.28
+    },
+    {
+      "word": "o",
+      "start": 50.58,
+      "end": 50.66
+    },
+    {
+      "word": "deus",
+      "start": 50.66,
+      "end": 50.86
+    },
+    {
+      "word": "grego",
+      "start": 50.86,
+      "end": 51.14
+    },
+    {
+      "word": "Zeus",
+      "start": 51.14,
+      "end": 51.34
+    },
+    {
+      "word": "era",
+      "start": 51.34,
+      "end": 51.56
+    },
+    {
+      "word": "conhecido",
+      "start": 51.56,
+      "end": 51.96
+    },
+    {
+      "word": "por",
+      "start": 51.96,
+      "end": 52.18
+    },
+    {
+      "word": "controlar",
+      "start": 52.18,
+      "end": 52.66
+    },
+    {
+      "word": "tempestades",
+      "start": 52.66,
+      "end": 53.4
+    },
+    {
+      "word": "e",
+      "start": 53.4,
+      "end": 53.7
+    },
+    {
+      "word": "raios.",
+      "start": 53.7,
+      "end": 54.16
+    },
+    {
+      "word": "Foi",
+      "start": 54.16,
+      "end": 54.5
+    },
+    {
+      "word": "associado",
+      "start": 54.5,
+      "end": 55.1
+    },
+    {
+      "word": "às",
+      "start": 55.1,
+      "end": 55.32
+    },
+    {
+      "word": "estrelas",
+      "start": 55.32,
+      "end": 55.92
+    },
+    {
+      "word": "e",
+      "start": 55.92,
+      "end": 56.12
+    },
+    {
+      "word": "ao",
+      "start": 56.12,
+      "end": 56.32
+    },
+    {
+      "word": "céu",
+      "start": 56.32,
+      "end": 56.6
+    },
+    {
+      "word": "e",
+      "start": 56.6,
+      "end": 56.92
+    },
+    {
+      "word": "essa",
+      "start": 56.92,
+      "end": 57.12
+    },
+    {
+      "word": "associação",
+      "start": 57.12,
+      "end": 57.76
+    },
+    {
+      "word": "pode",
+      "start": 57.76,
+      "end": 58.02
+    },
+    {
+      "word": "ter",
+      "start": 58.02,
+      "end": 58.24
+    },
+    {
+      "word": "sido",
+      "start": 58.24,
+      "end": 58.5
+    },
+    {
+      "word": "influenciada",
+      "start": 58.5,
+      "end": 59.22
+    },
+    {
+      "word": "pela",
+      "start": 59.22,
+      "end": 59.42
+    },
+    {
+      "word": "forma",
+      "start": 59.42,
+      "end": 59.76
+    },
+    {
+      "word": "como",
+      "start": 59.76,
+      "end": 60.0
+    },
+    {
+      "word": "as",
+      "start": 60.0,
+      "end": 60.18
+    },
+    {
+      "word": "tempestades",
+      "start": 60.18,
+      "end": 60.74
+    },
+    {
+      "word": "parecem",
+      "start": 60.74,
+      "end": 61.26
+    },
+    {
+      "word": "nascer",
+      "start": 61.26,
+      "end": 61.5
+    },
+    {
+      "word": "do",
+      "start": 61.5,
+      "end": 61.64
+    },
+    {
+      "word": "céu.",
+      "start": 61.64,
+      "end": 61.92
+    },
+    {
+      "word": "Além",
+      "start": 62.22,
+      "end": 62.42
+    },
+    {
+      "word": "disso,",
+      "start": 62.42,
+      "end": 62.74
+    },
+    {
+      "word": "a",
+      "start": 63.02,
+      "end": 63.02
+    },
+    {
+      "word": "astronomia",
+      "start": 63.02,
+      "end": 63.5
+    },
+    {
+      "word": "moderna",
+      "start": 63.5,
+      "end": 63.94
+    },
+    {
+      "word": "permite",
+      "start": 63.94,
+      "end": 64.28
+    },
+    {
+      "word": "compreender",
+      "start": 64.28,
+      "end": 64.86
+    },
+    {
+      "word": "melhor",
+      "start": 64.86,
+      "end": 65.24
+    },
+    {
+      "word": "como",
+      "start": 65.24,
+      "end": 65.48
+    },
+    {
+      "word": "esses",
+      "start": 65.48,
+      "end": 65.68
+    },
+    {
+      "word": "deuses",
+      "start": 65.68,
+      "end": 66.0
+    },
+    {
+      "word": "astrais",
+      "start": 66.0,
+      "end": 66.42
+    },
+    {
+      "word": "podem",
+      "start": 66.42,
+      "end": 66.78
+    },
+    {
+      "word": "ter",
+      "start": 66.78,
+      "end": 66.96
+    },
+    {
+      "word": "influenciado",
+      "start": 66.96,
+      "end": 67.64
+    },
+    {
+      "word": "a",
+      "start": 67.64,
+      "end": 67.76
+    },
+    {
+      "word": "vida",
+      "start": 67.76,
+      "end": 67.96
+    },
+    {
+      "word": "dos",
+      "start": 67.96,
+      "end": 68.18
+    },
+    {
+      "word": "antigos.",
+      "start": 68.18,
+      "end": 68.68
+    },
+    {
+      "word": "Por",
+      "start": 69.06,
+      "end": 69.18
+    },
+    {
+      "word": "exemplo,",
+      "start": 69.18,
+      "end": 69.5
+    },
+    {
+      "word": "o",
+      "start": 69.92,
+      "end": 70.0
+    },
+    {
+      "word": "facto",
+      "start": 70.0,
+      "end": 70.28
+    },
+    {
+      "word": "de",
+      "start": 70.28,
+      "end": 70.48
+    },
+    {
+      "word": "os",
+      "start": 70.48,
+      "end": 70.58
+    },
+    {
+      "word": "antigos",
+      "start": 70.58,
+      "end": 70.96
+    },
+    {
+      "word": "egípcios",
+      "start": 70.96,
+      "end": 71.44
+    },
+    {
+      "word": "preverem",
+      "start": 71.44,
+      "end": 71.94
+    },
+    {
+      "word": "as",
+      "start": 71.94,
+      "end": 72.04
+    },
+    {
+      "word": "estações",
+      "start": 72.04,
+      "end": 72.58
+    },
+    {
+      "word": "e",
+      "start": 72.58,
+      "end": 72.88
+    },
+    {
+      "word": "o",
+      "start": 72.88,
+      "end": 72.98
+    },
+    {
+      "word": "organizarem",
+      "start": 72.98,
+      "end": 73.58
+    },
+    {
+      "word": "a",
+      "start": 73.58,
+      "end": 73.72
+    },
+    {
+      "word": "cultura",
+      "start": 73.72,
+      "end": 73.94
+    },
+    {
+      "word": "em",
+      "start": 73.94,
+      "end": 74.24
+    },
+    {
+      "word": "torno",
+      "start": 74.24,
+      "end": 74.42
+    },
+    {
+      "word": "disso",
+      "start": 74.42,
+      "end": 74.7
+    },
+    {
+      "word": "pode",
+      "start": 74.7,
+      "end": 75.0
+    },
+    {
+      "word": "ter",
+      "start": 75.0,
+      "end": 75.22
+    },
+    {
+      "word": "sido",
+      "start": 75.22,
+      "end": 75.48
+    },
+    {
+      "word": "reforçado",
+      "start": 75.48,
+      "end": 76.08
+    },
+    {
+      "word": "pela",
+      "start": 76.08,
+      "end": 76.42
+    },
+    {
+      "word": "observação",
+      "start": 76.42,
+      "end": 77.18
+    },
+    {
+      "word": "do",
+      "start": 77.18,
+      "end": 77.3
+    },
+    {
+      "word": "movimento",
+      "start": 77.3,
+      "end": 77.56
+    },
+    {
+      "word": "das",
+      "start": 77.56,
+      "end": 78.0
+    },
+    {
+      "word": "estrelas",
+      "start": 78.0,
+      "end": 78.46
+    },
+    {
+      "word": "no",
+      "start": 78.46,
+      "end": 78.6
+    },
+    {
+      "word": "céu.",
+      "start": 78.6,
+      "end": 78.9
+    },
+    {
+      "word": "Agora,",
+      "start": 79.16,
+      "end": 79.48
+    },
+    {
+      "word": "você",
+      "start": 79.78,
+      "end": 79.92
+    },
+    {
+      "word": "provavelmente",
+      "start": 79.92,
+      "end": 80.5
+    },
+    {
+      "word": "se",
+      "start": 80.5,
+      "end": 80.7
+    },
+    {
+      "word": "pergunta",
+      "start": 80.7,
+      "end": 81.02
+    },
+    {
+      "word": "qual",
+      "start": 81.02,
+      "end": 81.54
+    },
+    {
+      "word": "é",
+      "start": 81.54,
+      "end": 81.68
+    },
+    {
+      "word": "a",
+      "start": 81.68,
+      "end": 81.7
+    },
+    {
+      "word": "verdade",
+      "start": 81.7,
+      "end": 81.98
+    },
+    {
+      "word": "por",
+      "start": 81.98,
+      "end": 82.24
+    },
+    {
+      "word": "trás",
+      "start": 82.24,
+      "end": 82.48
+    },
+    {
+      "word": "desses",
+      "start": 82.48,
+      "end": 82.74
+    },
+    {
+      "word": "deuses",
+      "start": 82.74,
+      "end": 83.1
+    },
+    {
+      "word": "astrais",
+      "start": 83.1,
+      "end": 83.58
+    },
+    {
+      "word": "antigos?",
+      "start": 83.58,
+      "end": 84.12
+    },
+    {
+      "word": "É",
+      "start": 84.38,
+      "end": 84.48
+    },
+    {
+      "word": "uma",
+      "start": 84.48,
+      "end": 84.58
+    },
+    {
+      "word": "pergunta",
+      "start": 84.58,
+      "end": 84.9
+    },
+    {
+      "word": "difícil",
+      "start": 84.9,
+      "end": 85.3
+    },
+    {
+      "word": "de",
+      "start": 85.3,
+      "end": 85.54
+    },
+    {
+      "word": "responder,",
+      "start": 85.54,
+      "end": 86.02
+    },
+    {
+      "word": "mas",
+      "start": 86.32,
+      "end": 86.46
+    },
+    {
+      "word": "é",
+      "start": 86.46,
+      "end": 86.54
+    },
+    {
+      "word": "importante",
+      "start": 86.54,
+      "end": 86.86
+    },
+    {
+      "word": "lembrar",
+      "start": 86.86,
+      "end": 87.32
+    },
+    {
+      "word": "que",
+      "start": 87.32,
+      "end": 87.52
+    },
+    {
+      "word": "esses",
+      "start": 87.52,
+      "end": 87.7
+    },
+    {
+      "word": "mitos",
+      "start": 87.7,
+      "end": 88.14
+    },
+    {
+      "word": "foram",
+      "start": 88.14,
+      "end": 88.34
+    },
+    {
+      "word": "criados",
+      "start": 88.34,
+      "end": 88.8
+    },
+    {
+      "word": "para",
+      "start": 88.8,
+      "end": 89.04
+    },
+    {
+      "word": "explicar",
+      "start": 89.04,
+      "end": 89.36
+    },
+    {
+      "word": "fenômenos",
+      "start": 89.36,
+      "end": 90.06
+    },
+    {
+      "word": "naturais",
+      "start": 90.06,
+      "end": 90.66
+    },
+    {
+      "word": "e",
+      "start": 90.66,
+      "end": 90.82
+    },
+    {
+      "word": "humanos.",
+      "start": 90.82,
+      "end": 91.22
+    },
+    {
+      "word": "Portanto,",
+      "start": 91.62,
+      "end": 92.08
+    },
+    {
+      "word": "ainda",
+      "start": 92.14,
+      "end": 92.4
+    },
+    {
+      "word": "podem",
+      "start": 92.4,
+      "end": 92.76
+    },
+    {
+      "word": "ensinar",
+      "start": 92.76,
+      "end": 93.24
+    },
+    {
+      "word": "-nos",
+      "start": 93.24,
+      "end": 93.4
+    },
+    {
+      "word": "algo",
+      "start": 93.4,
+      "end": 93.66
+    },
+    {
+      "word": "sobre",
+      "start": 93.66,
+      "end": 93.98
+    },
+    {
+      "word": "a",
+      "start": 93.98,
+      "end": 94.14
+    },
+    {
+      "word": "nossa",
+      "start": 94.14,
+      "end": 94.32
+    },
+    {
+      "word": "compreensão",
+      "start": 94.32,
+      "end": 94.96
+    },
+    {
+      "word": "da",
+      "start": 94.96,
+      "end": 95.04
+    },
+    {
+      "word": "astronomia",
+      "start": 95.04,
+      "end": 95.76
+    },
+    {
+      "word": "e",
+      "start": 95.76,
+      "end": 95.9
+    },
+    {
+      "word": "do",
+      "start": 95.9,
+      "end": 96.0
+    },
+    {
+      "word": "mundo",
+      "start": 96.0,
+      "end": 96.2
+    },
+    {
+      "word": "em",
+      "start": 96.2,
+      "end": 96.34
+    },
+    {
+      "word": "geral.",
+      "start": 96.34,
+      "end": 96.56
+    }
+  ]
+}

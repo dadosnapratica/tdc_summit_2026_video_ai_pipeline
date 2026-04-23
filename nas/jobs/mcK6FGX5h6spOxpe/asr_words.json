@@ -1,0 +1,946 @@
+{
+  "language": "pt",
+  "duration_s": 84.3946875,
+  "words": [
+    {
+      "word": "Imagine",
+      "start": 0.0,
+      "end": 0.46
+    },
+    {
+      "word": "você",
+      "start": 0.46,
+      "end": 1.02
+    },
+    {
+      "word": "assistindo",
+      "start": 1.02,
+      "end": 1.84
+    },
+    {
+      "word": "ao",
+      "start": 1.84,
+      "end": 2.02
+    },
+    {
+      "word": "céu",
+      "start": 2.02,
+      "end": 2.26
+    },
+    {
+      "word": "noturno,",
+      "start": 2.26,
+      "end": 3.04
+    },
+    {
+      "word": "admirando",
+      "start": 3.22,
+      "end": 3.84
+    },
+    {
+      "word": "a",
+      "start": 3.84,
+      "end": 3.96
+    },
+    {
+      "word": "beleza",
+      "start": 3.96,
+      "end": 4.36
+    },
+    {
+      "word": "das",
+      "start": 4.36,
+      "end": 4.66
+    },
+    {
+      "word": "estrelas.",
+      "start": 4.66,
+      "end": 5.52
+    },
+    {
+      "word": "Mas",
+      "start": 5.84,
+      "end": 6.16
+    },
+    {
+      "word": "você",
+      "start": 6.16,
+      "end": 6.44
+    },
+    {
+      "word": "sabia",
+      "start": 6.44,
+      "end": 6.94
+    },
+    {
+      "word": "que",
+      "start": 6.94,
+      "end": 7.18
+    },
+    {
+      "word": "essas",
+      "start": 7.18,
+      "end": 7.46
+    },
+    {
+      "word": "luzes",
+      "start": 7.46,
+      "end": 8.08
+    },
+    {
+      "word": "estão",
+      "start": 8.08,
+      "end": 8.4
+    },
+    {
+      "word": "muito",
+      "start": 8.4,
+      "end": 8.72
+    },
+    {
+      "word": "mais",
+      "start": 8.72,
+      "end": 9.06
+    },
+    {
+      "word": "próximas",
+      "start": 9.06,
+      "end": 9.94
+    },
+    {
+      "word": "do",
+      "start": 9.94,
+      "end": 10.1
+    },
+    {
+      "word": "que",
+      "start": 10.1,
+      "end": 10.22
+    },
+    {
+      "word": "imaginava?",
+      "start": 10.22,
+      "end": 11.06
+    },
+    {
+      "word": "Hoje,",
+      "start": 11.5,
+      "end": 11.86
+    },
+    {
+      "word": "vamos",
+      "start": 12.22,
+      "end": 12.24
+    },
+    {
+      "word": "explorar",
+      "start": 12.24,
+      "end": 12.98
+    },
+    {
+      "word": "o",
+      "start": 12.98,
+      "end": 13.08
+    },
+    {
+      "word": "mistério",
+      "start": 13.08,
+      "end": 13.56
+    },
+    {
+      "word": "da",
+      "start": 13.56,
+      "end": 13.74
+    },
+    {
+      "word": "luz",
+      "start": 13.74,
+      "end": 13.96
+    },
+    {
+      "word": "que",
+      "start": 13.96,
+      "end": 14.22
+    },
+    {
+      "word": "sai",
+      "start": 14.22,
+      "end": 14.48
+    },
+    {
+      "word": "da",
+      "start": 14.48,
+      "end": 14.66
+    },
+    {
+      "word": "estrela",
+      "start": 14.66,
+      "end": 15.28
+    },
+    {
+      "word": "e",
+      "start": 15.28,
+      "end": 15.56
+    },
+    {
+      "word": "entender",
+      "start": 15.56,
+      "end": 16.08
+    },
+    {
+      "word": "melhor",
+      "start": 16.08,
+      "end": 16.62
+    },
+    {
+      "word": "como",
+      "start": 16.62,
+      "end": 17.1
+    },
+    {
+      "word": "as",
+      "start": 17.1,
+      "end": 17.28
+    },
+    {
+      "word": "estrelas",
+      "start": 17.28,
+      "end": 17.88
+    },
+    {
+      "word": "brilham.",
+      "start": 17.88,
+      "end": 18.44
+    },
+    {
+      "word": "A",
+      "start": 18.86,
+      "end": 18.96
+    },
+    {
+      "word": "emissão",
+      "start": 18.96,
+      "end": 19.38
+    },
+    {
+      "word": "estelar",
+      "start": 19.38,
+      "end": 19.98
+    },
+    {
+      "word": "é",
+      "start": 19.98,
+      "end": 20.16
+    },
+    {
+      "word": "o",
+      "start": 20.16,
+      "end": 20.26
+    },
+    {
+      "word": "processo",
+      "start": 20.26,
+      "end": 20.66
+    },
+    {
+      "word": "pelo",
+      "start": 20.66,
+      "end": 21.08
+    },
+    {
+      "word": "qual",
+      "start": 21.08,
+      "end": 21.38
+    },
+    {
+      "word": "as",
+      "start": 21.38,
+      "end": 21.64
+    },
+    {
+      "word": "estrelas",
+      "start": 21.64,
+      "end": 22.24
+    },
+    {
+      "word": "produzem",
+      "start": 22.24,
+      "end": 22.98
+    },
+    {
+      "word": "sua",
+      "start": 22.98,
+      "end": 23.36
+    },
+    {
+      "word": "própria",
+      "start": 23.36,
+      "end": 23.8
+    },
+    {
+      "word": "luz.",
+      "start": 23.8,
+      "end": 24.22
+    },
+    {
+      "word": "É",
+      "start": 24.86,
+      "end": 25.02
+    },
+    {
+      "word": "como",
+      "start": 25.02,
+      "end": 25.26
+    },
+    {
+      "word": "se",
+      "start": 25.26,
+      "end": 25.48
+    },
+    {
+      "word": "elas",
+      "start": 25.48,
+      "end": 25.7
+    },
+    {
+      "word": "tivessem",
+      "start": 25.7,
+      "end": 26.44
+    },
+    {
+      "word": "um",
+      "start": 26.44,
+      "end": 26.64
+    },
+    {
+      "word": "motor",
+      "start": 26.64,
+      "end": 27.0
+    },
+    {
+      "word": "interno",
+      "start": 27.0,
+      "end": 27.76
+    },
+    {
+      "word": "que",
+      "start": 27.76,
+      "end": 28.0
+    },
+    {
+      "word": "as",
+      "start": 28.0,
+      "end": 28.16
+    },
+    {
+      "word": "mantém",
+      "start": 28.16,
+      "end": 28.64
+    },
+    {
+      "word": "brilhando.",
+      "start": 28.64,
+      "end": 29.38
+    },
+    {
+      "word": "Essa",
+      "start": 29.38,
+      "end": 30.04
+    },
+    {
+      "word": "luz",
+      "start": 30.04,
+      "end": 30.38
+    },
+    {
+      "word": "é",
+      "start": 30.38,
+      "end": 30.62
+    },
+    {
+      "word": "formada",
+      "start": 30.62,
+      "end": 31.2
+    },
+    {
+      "word": "por",
+      "start": 31.2,
+      "end": 31.46
+    },
+    {
+      "word": "gases",
+      "start": 31.46,
+      "end": 31.88
+    },
+    {
+      "word": "quentes",
+      "start": 31.88,
+      "end": 32.58
+    },
+    {
+      "word": "e",
+      "start": 32.58,
+      "end": 32.86
+    },
+    {
+      "word": "ionizados",
+      "start": 32.86,
+      "end": 33.5
+    },
+    {
+      "word": "no",
+      "start": 33.5,
+      "end": 33.78
+    },
+    {
+      "word": "interior",
+      "start": 33.78,
+      "end": 34.26
+    },
+    {
+      "word": "da",
+      "start": 34.26,
+      "end": 34.5
+    },
+    {
+      "word": "estrela,",
+      "start": 34.5,
+      "end": 35.12
+    },
+    {
+      "word": "que",
+      "start": 35.34,
+      "end": 35.54
+    },
+    {
+      "word": "são",
+      "start": 35.54,
+      "end": 35.74
+    },
+    {
+      "word": "libertados",
+      "start": 35.74,
+      "end": 36.52
+    },
+    {
+      "word": "na",
+      "start": 36.52,
+      "end": 36.78
+    },
+    {
+      "word": "forma",
+      "start": 36.78,
+      "end": 37.16
+    },
+    {
+      "word": "de",
+      "start": 37.16,
+      "end": 37.44
+    },
+    {
+      "word": "raios",
+      "start": 37.44,
+      "end": 37.92
+    },
+    {
+      "word": "de",
+      "start": 37.92,
+      "end": 38.12
+    },
+    {
+      "word": "luz.",
+      "start": 38.12,
+      "end": 38.44
+    },
+    {
+      "word": "Imagine",
+      "start": 38.96,
+      "end": 39.42
+    },
+    {
+      "word": "uma",
+      "start": 39.42,
+      "end": 39.74
+    },
+    {
+      "word": "fogueira",
+      "start": 39.74,
+      "end": 40.34
+    },
+    {
+      "word": "em",
+      "start": 40.34,
+      "end": 40.62
+    },
+    {
+      "word": "uma",
+      "start": 40.62,
+      "end": 40.8
+    },
+    {
+      "word": "noite",
+      "start": 40.8,
+      "end": 41.26
+    },
+    {
+      "word": "de",
+      "start": 41.26,
+      "end": 41.5
+    },
+    {
+      "word": "inverno.",
+      "start": 41.5,
+      "end": 42.16
+    },
+    {
+      "word": "A",
+      "start": 42.52,
+      "end": 42.64
+    },
+    {
+      "word": "chama",
+      "start": 42.64,
+      "end": 42.94
+    },
+    {
+      "word": "está",
+      "start": 42.94,
+      "end": 43.22
+    },
+    {
+      "word": "muito",
+      "start": 43.22,
+      "end": 43.5
+    },
+    {
+      "word": "quente",
+      "start": 43.5,
+      "end": 44.22
+    },
+    {
+      "word": "e",
+      "start": 44.22,
+      "end": 44.58
+    },
+    {
+      "word": "está",
+      "start": 44.58,
+      "end": 44.82
+    },
+    {
+      "word": "queimando",
+      "start": 44.82,
+      "end": 45.42
+    },
+    {
+      "word": "os",
+      "start": 45.42,
+      "end": 45.6
+    },
+    {
+      "word": "materiais",
+      "start": 45.6,
+      "end": 46.3
+    },
+    {
+      "word": "combustíveis",
+      "start": 46.3,
+      "end": 47.28
+    },
+    {
+      "word": "à",
+      "start": 47.28,
+      "end": 47.58
+    },
+    {
+      "word": "sua",
+      "start": 47.58,
+      "end": 47.72
+    },
+    {
+      "word": "volta.",
+      "start": 47.72,
+      "end": 48.32
+    },
+    {
+      "word": "Da",
+      "start": 48.96,
+      "end": 49.06
+    },
+    {
+      "word": "mesma",
+      "start": 49.06,
+      "end": 49.36
+    },
+    {
+      "word": "maneira,",
+      "start": 49.36,
+      "end": 50.12
+    },
+    {
+      "word": "as",
+      "start": 50.56,
+      "end": 50.62
+    },
+    {
+      "word": "estrelas",
+      "start": 50.62,
+      "end": 51.28
+    },
+    {
+      "word": "também",
+      "start": 51.28,
+      "end": 51.8
+    },
+    {
+      "word": "têm",
+      "start": 51.8,
+      "end": 52.24
+    },
+    {
+      "word": "temperaturas",
+      "start": 52.24,
+      "end": 53.32
+    },
+    {
+      "word": "extremamente",
+      "start": 53.32,
+      "end": 54.42
+    },
+    {
+      "word": "altas",
+      "start": 54.42,
+      "end": 55.08
+    },
+    {
+      "word": "no",
+      "start": 55.08,
+      "end": 55.26
+    },
+    {
+      "word": "seu",
+      "start": 55.26,
+      "end": 55.5
+    },
+    {
+      "word": "interior,",
+      "start": 55.5,
+      "end": 56.12
+    },
+    {
+      "word": "que",
+      "start": 56.12,
+      "end": 56.68
+    },
+    {
+      "word": "fazem",
+      "start": 56.68,
+      "end": 57.1
+    },
+    {
+      "word": "com",
+      "start": 57.1,
+      "end": 57.48
+    },
+    {
+      "word": "que",
+      "start": 57.48,
+      "end": 57.66
+    },
+    {
+      "word": "os",
+      "start": 57.66,
+      "end": 57.86
+    },
+    {
+      "word": "átomos",
+      "start": 57.86,
+      "end": 58.24
+    },
+    {
+      "word": "sejam",
+      "start": 58.24,
+      "end": 58.78
+    },
+    {
+      "word": "libertados",
+      "start": 58.78,
+      "end": 59.7
+    },
+    {
+      "word": "e",
+      "start": 59.7,
+      "end": 59.94
+    },
+    {
+      "word": "sejam",
+      "start": 59.94,
+      "end": 60.38
+    },
+    {
+      "word": "projetados",
+      "start": 60.38,
+      "end": 61.26
+    },
+    {
+      "word": "para",
+      "start": 61.26,
+      "end": 61.58
+    },
+    {
+      "word": "fora",
+      "start": 61.58,
+      "end": 61.94
+    },
+    {
+      "word": "da",
+      "start": 61.94,
+      "end": 62.1
+    },
+    {
+      "word": "estrela",
+      "start": 62.1,
+      "end": 62.6
+    },
+    {
+      "word": "como",
+      "start": 62.6,
+      "end": 62.88
+    },
+    {
+      "word": "luz.",
+      "start": 62.88,
+      "end": 63.26
+    },
+    {
+      "word": "E",
+      "start": 63.9,
+      "end": 64.02
+    },
+    {
+      "word": "agora",
+      "start": 64.02,
+      "end": 64.44
+    },
+    {
+      "word": "você",
+      "start": 64.44,
+      "end": 64.96
+    },
+    {
+      "word": "tem",
+      "start": 64.96,
+      "end": 65.26
+    },
+    {
+      "word": "uma",
+      "start": 65.26,
+      "end": 65.48
+    },
+    {
+      "word": "ideia",
+      "start": 65.48,
+      "end": 65.8
+    },
+    {
+      "word": "do",
+      "start": 65.8,
+      "end": 66.0
+    },
+    {
+      "word": "mistério",
+      "start": 66.0,
+      "end": 66.52
+    },
+    {
+      "word": "da",
+      "start": 66.52,
+      "end": 66.72
+    },
+    {
+      "word": "luz",
+      "start": 66.72,
+      "end": 66.98
+    },
+    {
+      "word": "que",
+      "start": 66.98,
+      "end": 67.26
+    },
+    {
+      "word": "sai",
+      "start": 67.26,
+      "end": 67.56
+    },
+    {
+      "word": "da",
+      "start": 67.56,
+      "end": 67.74
+    },
+    {
+      "word": "estrela.",
+      "start": 67.74,
+      "end": 68.38
+    },
+    {
+      "word": "Mas",
+      "start": 68.84,
+      "end": 69.14
+    },
+    {
+      "word": "essa",
+      "start": 69.14,
+      "end": 69.46
+    },
+    {
+      "word": "é",
+      "start": 69.46,
+      "end": 69.54
+    },
+    {
+      "word": "apenas",
+      "start": 69.54,
+      "end": 70.0
+    },
+    {
+      "word": "a",
+      "start": 70.0,
+      "end": 70.22
+    },
+    {
+      "word": "superfície",
+      "start": 70.22,
+      "end": 70.98
+    },
+    {
+      "word": "do",
+      "start": 70.98,
+      "end": 71.14
+    },
+    {
+      "word": "iceberg.",
+      "start": 71.14,
+      "end": 71.5
+    },
+    {
+      "word": "Existem",
+      "start": 72.24,
+      "end": 72.8
+    },
+    {
+      "word": "muitas",
+      "start": 72.8,
+      "end": 73.28
+    },
+    {
+      "word": "outras",
+      "start": 73.28,
+      "end": 73.82
+    },
+    {
+      "word": "perguntas",
+      "start": 73.82,
+      "end": 74.84
+    },
+    {
+      "word": "que",
+      "start": 74.84,
+      "end": 75.04
+    },
+    {
+      "word": "ainda",
+      "start": 75.04,
+      "end": 75.32
+    },
+    {
+      "word": "precisam",
+      "start": 75.32,
+      "end": 76.04
+    },
+    {
+      "word": "ser",
+      "start": 76.04,
+      "end": 76.24
+    },
+    {
+      "word": "respondidas",
+      "start": 76.24,
+      "end": 77.18
+    },
+    {
+      "word": "sobre",
+      "start": 77.18,
+      "end": 77.68
+    },
+    {
+      "word": "como",
+      "start": 77.68,
+      "end": 78.04
+    },
+    {
+      "word": "as",
+      "start": 78.04,
+      "end": 78.2
+    },
+    {
+      "word": "estrelas",
+      "start": 78.2,
+      "end": 78.82
+    },
+    {
+      "word": "brilham",
+      "start": 78.82,
+      "end": 79.48
+    },
+    {
+      "word": "e",
+      "start": 79.48,
+      "end": 80.04
+    },
+    {
+      "word": "por",
+      "start": 80.04,
+      "end": 80.22
+    },
+    {
+      "word": "quais",
+      "start": 80.22,
+      "end": 80.58
+    },
+    {
+      "word": "razões",
+      "start": 80.58,
+      "end": 81.4
+    },
+    {
+      "word": "elas",
+      "start": 81.4,
+      "end": 81.88
+    },
+    {
+      "word": "são",
+      "start": 81.88,
+      "end": 82.18
+    },
+    {
+      "word": "tão",
+      "start": 82.18,
+      "end": 82.42
+    },
+    {
+      "word": "importantes",
+      "start": 82.42,
+      "end": 83.26
+    },
+    {
+      "word": "para",
+      "start": 83.26,
+      "end": 83.66
+    },
+    {
+      "word": "nós.",
+      "start": 83.66,
+      "end": 83.98
+    }
+  ]
+}

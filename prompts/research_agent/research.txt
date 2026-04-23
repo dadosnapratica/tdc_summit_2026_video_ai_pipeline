@@ -1,0 +1,2 @@
+(Reservado) Instruções adicionais para refinamento do research_agent via env SCRIPT — o research_agent usa prompt inline + este ficheiro pode ser concatenado no futuro.
+

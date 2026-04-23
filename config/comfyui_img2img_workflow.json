@@ -1,0 +1,4 @@
+{
+  "__README": "Substitua este conteúdo pelo export API do ComfyUI (apenas o objeto 'prompt' / nós). Placeholders suportados pelo visual_agent: __INPUT_BASENAME__ (ficheiro em ComfyUI/input), __CKPT_NAME__. Enquanto '__PLACEHOLDER__' estiver presente, o agente usa fallback ffmpeg.",
+  "__PLACEHOLDER__": true
+}

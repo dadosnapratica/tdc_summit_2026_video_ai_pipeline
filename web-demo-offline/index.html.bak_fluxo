@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Pode atenuar avisos de Permission Policy (fullscreen) do iframe Typeform; Safari pode ainda registar ruído interno do form.typeform.com -->
+    <meta http-equiv="Permissions-Policy" content='fullscreen=(self "https://form.typeform.com" "https://embed.typeform.com")' />
+    <title>IA VideoStudio — Demo offline (Ideias Factory)</title>
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect fill="%237c5cff" width="32" height="32" rx="7"/%3E%3C/svg%3E' />
+    <link rel="stylesheet" href="css/styles.css?v=8" />
+    <script>
+      window.__VIDEO_STUDIO_DEMO_CONFIG = {
+        // Typeform Next — Generic sites: <div data-tf-live="…"></div> + //embed.typeform.com/next/embed.js
+        typeformLiveId: "01KP4HSXZXXTBSD70SS98KK2X0",
+        // PostHog: Project settings → Project API key — ver web-demo-offline/ANALYTICS.md
+        // posthogKey: "phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        // posthogApiHost: "https://us.i.posthog.com",
+        collectMetrics: true,
+      };
+    </script>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <main class="container">
+      <div id="demo_banner" class="card" style="margin-bottom: 14px; padding: 12px 16px; border-color: rgba(124, 92, 255, 0.45)">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+          <div>
+            <strong>Demonstração offline</strong>
+            <span class="muted" style="margin-left: 8px">
+              Sem backend — dados de <code>mock_data.js</code> · para vendas, onboarding e validação de conceito
+            </span>
+          </div>
+          <div class="row" style="gap: 10px">
+            <button type="button" class="btn btn-ghost" id="btn-tour-start">Tour guiado</button>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="brand">
+          <!-- Logo inline (alinhado ao lab: hex linhas rose-gold + círculo + ponto + ideias / AI Lab) -->
+          <svg
+            class="logo logo--inline"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 190 44"
+            width="190"
+            height="44"
+            role="img"
+            aria-label="ideias AI Lab"
+          >
+            <defs>
+              <linearGradient id="logoLabRose" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#e8c9a8" />
+                <stop offset="45%" stop-color="#d4a574" />
+                <stop offset="100%" stop-color="#b8895c" />
+              </linearGradient>
+            </defs>
+            <!-- Hexágono (traço fino), círculo interior e ponto — como o mock original -->
+            <path
+              d="M21 7.5  L33.26 14.5  L33.26 29.5  L21 36.5  L8.74 29.5  L8.74 14.5  Z"
+              fill="none"
+              stroke="url(#logoLabRose)"
+              stroke-width="1.15"
+              stroke-linejoin="round"
+            />
+            <circle cx="21" cy="22" r="6.2" fill="none" stroke="url(#logoLabRose)" stroke-width="0.95" opacity="0.92" />
+            <circle cx="21" cy="22" r="1.35" fill="url(#logoLabRose)" />
+            <text
+              x="46"
+              y="18.5"
+              fill="#f5f7ff"
+              font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif"
+              font-size="13.5"
+              font-weight="500"
+              letter-spacing="0.01em"
+            >
+              ideias
+            </text>
+            <text
+              x="46"
+              y="33"
+              fill="#f0f2f8"
+              font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif"
+              font-size="10.75"
+              font-weight="700"
+              letter-spacing="0.06em"
+            >
+              AI Lab
+            </text>
+          </svg>
+          <div>
+            <div class="title">IA VideoStudio</div>
+            <div class="subtitle">Ideias Factory · Demo comercial (offline)</div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div class="pill header-pill">Wizard · Research → Roteiro → Scenes → Assets → Pipeline (mock)</div>
+          <span class="muted" style="font-size: 12px">OpenAPI no repositório (lab)</span>
+          <button
+            type="button"
+            class="health-btn"
+            id="header_health"
+            aria-label="Estado simulado (demo)"
+            title="Demonstração — JSON de exemplo"
+          >
+            <span class="health-dot" id="health_dot" data-status="unknown"></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="card">
+        <nav class="tabs" role="tablist">
+          <button class="tab is-active" data-tab="research" role="tab" type="button">Research</button>
+          <button class="tab" data-tab="roteiro" role="tab" type="button">Roteirizador</button>
+          <button class="tab" data-tab="scenes" role="tab" type="button">Scenes</button>
+          <button class="tab" data-tab="assets" role="tab" type="button">Image Research</button>
+          <button class="tab" data-tab="pipeline" role="tab" type="button">Pipeline (mock)</button>
+        </nav>
+
+        <div class="content">
+          <section class="panel is-active" id="tab-research">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Research</div>
+                  <div class="tile-desc">
+                    Combine sinais de Trends com vídeos populares no YouTube e gere sugestões clicáveis para o roteirizador.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="research" title="Ajuda">?</button>
+              </div>
+
+              <div class="grid2">
+                <div>
+                  <label class="label">Keyword / tema (YouTube + Trends)</label>
+                  <input id="research_kw" class="input" value="astronomia" />
+                </div>
+                <div class="grid2" style="grid-template-columns: 1fr 1fr">
+                  <div>
+                    <label class="label">Região (YouTube + Trends)</label>
+                    <select id="research_region" class="input">
+                      <option value="BR" selected>BR — Brasil</option>
+                      <option value="US">US — Estados Unidos</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="label">Categoria YouTube</label>
+                    <select id="research_cat" class="input">
+                      <option value="28" selected>28 — Ciência e tecnologia</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <button id="btn-research" class="btn">Buscar sugestões</button>
+                <span class="muted" style="font-size: 12px">Na demo, o resultado vem sempre do mock.</span>
+              </div>
+            </div>
+
+            <div class="research-results-wrap">
+              <div class="research-subtabs" role="tablist" aria-label="Resultados do research">
+                <button type="button" class="subtab is-active" data-research-sub="videos" role="tab">Vídeos</button>
+                <button type="button" class="subtab" data-research-sub="trends" role="tab">Trends</button>
+              </div>
+              <div id="research_videos" class="research-subpanel is-active research-feed"></div>
+              <div id="research_trends" class="research-subpanel research-feed"></div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-roteiro">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Roteirizador</div>
+                  <div class="tile-desc">
+                    Gere o roteiro narrado (PT-BR), textos por parte e prompts de cena — na demo, resposta fixa do mock.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="roteiro" title="Ajuda">?</button>
+              </div>
+
+              <div class="grid2">
+                <div>
+                  <label class="label">Tema</label>
+                  <input id="tema" class="input" value="astronomia" />
+                </div>
+                <div>
+                  <label class="label">Ângulo</label>
+                  <input id="angulo" class="input" placeholder="ex: Mitos comuns sobre buracos negros" />
+                </div>
+              </div>
+
+              <div class="row">
+                <button id="btn-angles" class="btn btn-ghost">Sugerir ângulos</button>
+                <button id="btn-generate" class="btn">Gerar</button>
+                <label class="toggle">
+                  <input id="use-ollama" type="checkbox" />
+                  <span>Usar Ollama</span>
+                </label>
+              </div>
+            </div>
+
+            <div id="angles" class="list"></div>
+
+            <div class="split">
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Roteiro base</div>
+                    <div class="tile-desc">Texto contínuo do roteiro (útil para revisão rápida e copiar/colar).</div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="roteiro" title="Ajuda">?</button>
+                </div>
+                <pre id="roteiro_base" class="pre"></pre>
+              </div>
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Textos por parte</div>
+                    <div class="tile-desc">Saída segmentada por IDs de parte (útil para montar capítulos/legendas).</div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="roteiro" title="Ajuda">?</button>
+                </div>
+                <div id="textos" class="stack"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-scenes">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Scenes</div>
+                  <div class="tile-desc">
+                    Prompts visuais por janela de tempo. Use para alimentar o Image Research com consistência por cena.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="scenes" title="Ajuda">?</button>
+              </div>
+
+              <div class="row">
+                <button id="btn-use-first-scene" class="btn btn-ghost">Usar 1ª cena no Image Research</button>
+              </div>
+            </div>
+            <div id="scenes" class="stack"></div>
+          </section>
+
+          <section class="panel" id="tab-assets">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Image Research</div>
+                  <div class="tile-desc">
+                    Busca candidatos de imagem por cena e mostra o selecionado pelo ranker (mock na demo).
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+              </div>
+
+              <div class="grid2">
+                <div>
+                  <label class="label">Prompt de cena</label>
+                  <textarea id="scene" class="textarea" rows="3" placeholder="Cole aqui o prompt de cena"></textarea>
+                </div>
+                <div>
+                  <label class="label">Style guide (opcional)</label>
+                  <textarea
+                    id="style"
+                    class="textarea"
+                    rows="3"
+                    placeholder="cinematic documentary, realistic, high detail..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="field">
+                  <label class="label">Por fonte</label>
+                  <input id="per_source" class="input" type="number" value="5" min="1" max="50" />
+                </div>
+                <button id="btn-search" class="btn">Pesquisar</button>
+              </div>
+            </div>
+
+            <div class="split">
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Selecionado</div>
+                    <div class="tile-desc">O asset escolhido pelo ranker e o motivo (quando disponível).</div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+                </div>
+                <div id="selected" class="stack"></div>
+              </div>
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Candidatos</div>
+                    <div class="tile-desc">Lista completa retornada pela busca (para inspeção e auditoria).</div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+                </div>
+                <div id="assets" class="stack"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-pipeline">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Pipeline (pós-assets, simulado)</div>
+                  <div class="tile-desc">
+                    Continua o fluxo LangGraph só no browser: visual → TTS → composer → metadata → publisher. Os paths
+                    seguem a convenção NFS do projeto; não há ficheiros reais nesta demo.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="pipeline" title="Ajuda">?</button>
+              </div>
+
+              <p class="muted" style="margin: 0 0 12px; font-size: 13px; line-height: 1.45">
+                Usa o último roteiro gerado (cenas + textos), a última pesquisa de assets e, se existir, o último pack
+                de Research para enriquecer <code>trending_data</code>. Pode correr sem Image Research — nesse caso os
+                <code>raw_assets</code> ficam mínimos.
+              </p>
+
+              <div class="row" style="flex-wrap: wrap; gap: 10px">
+                <button id="btn-pipeline-mock" class="btn">Simular restante do pipeline</button>
+                <span class="muted" style="font-size: 12px">Atraso entre «agentes»: ~320 ms (só UX).</span>
+              </div>
+
+              <div id="pipeline_steps" class="pipeline-log" hidden></div>
+
+              <div class="tile" style="margin-top: 14px">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">VideoState (cauda simulada)</div>
+                    <div class="tile-desc">Objeto agregado após os cinco nós mockados — útil para alinhar equipas ao contrato.</div>
+                  </div>
+                </div>
+                <pre id="pipeline_state_pre" class="pre" style="max-height: min(440px, 52vh); overflow: auto">{}</pre>
+              </div>
+
+              <div class="tile" style="margin-top: 14px">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Pré-visualização (vídeo de exemplo)</div>
+                    <div class="tile-desc">
+                      Não é o <code>final.mp4</code> simulado — apenas um clip curto público para mostrar o compositor na
+                      história.
+                    </div>
+                  </div>
+                </div>
+                <div class="pipeline-sample-video">
+                  <video controls playsinline preload="metadata" poster="">
+                    <source
+                      src="https://www.w3.org/2010/05/video/mediafiles/Fragments/frags.mp4"
+                      type="video/mp4" />
+                    O seu browser não suporta vídeo embutido.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Demo offline · sem autenticação · sem servidor</span>
+        <span class="muted">Abra <code>index.html</code> localmente ou sirva esta pasta com qualquer HTTP estático</span>
+      </footer>
+    </main>
+
+    <dialog id="help_dialog" class="modal">
+      <div class="modal-head">
+        <div class="modal-title">Ajuda</div>
+        <button id="help_close" class="btn btn-ghost" type="button">Fechar</button>
+      </div>
+      <iframe id="help_frame" class="modal-frame" title="Documentação"></iframe>
+    </dialog>
+
+    <dialog id="demo_health_dialog" class="modal">
+      <div class="modal-head">
+        <div class="modal-title">/health (simulado)</div>
+        <button id="demo_health_close" class="btn btn-ghost" type="button">Fechar</button>
+      </div>
+      <p class="muted" style="margin: 0 0 10px; font-size: 13px">
+        Payload de exemplo — na instalação real reflete Ollama, pytrends e chaves de API.
+      </p>
+      <pre id="demo_health_pre" class="pre" style="max-height: min(420px, 50vh); overflow: auto"></pre>
+    </dialog>
+
+    <script src="js/mock_data.js?v=2"></script>
+    <script src="js/mock_api.js?v=2"></script>
+    <script src="js/chart.umd.min.js?v=4.4.1"></script>
+    <script src="js/app.js?v=2"></script>
+    <script src="js/tour.js?v=3"></script>
+    <script src="js/demo_analytics.js?v=9"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var b = document.getElementById("btn-tour-start");
+        if (b && window.VideoStudioDemoTour) {
+          b.addEventListener("click", function () {
+            window.VideoStudioDemoTour.start();
+          });
+        }
+        if (window.VideoStudioDemoTour) {
+          window.VideoStudioDemoTour.offerOnFirstVisit();
+        }
+        var hc = document.getElementById("demo_health_close");
+        var hd = document.getElementById("demo_health_dialog");
+        if (hc && hd) {
+          hc.addEventListener("click", function () {
+            if (typeof hd.close === "function") hd.close();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

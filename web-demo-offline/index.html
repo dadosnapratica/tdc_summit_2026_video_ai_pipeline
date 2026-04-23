@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Permissions-Policy" content='fullscreen=(self "https://form.typeform.com" "https://embed.typeform.com")' />
+    <title>IA VideoStudio — Demo offline (Ideias Factory)</title>
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"%3E%3Crect fill="%237c5cff" width="32" height="32" rx="7"/%3E%3C/svg%3E' />
+    <link rel="stylesheet" href="css/styles.css?v=27" />
+    <script>
+      window.__VIDEO_STUDIO_DEMO_CONFIG = {
+        typeformLiveId: "01KP4HSXZXXTBSD70SS98KK2X0",
+        collectMetrics: true,
+      };
+    </script>
+  </head>
+  <body>
+    <div class="bg"></div>
+
+    <main class="container">
+      <div id="demo_banner" class="card" style="margin-bottom: 14px; padding: 12px 16px; border-color: rgba(124, 92, 255, 0.45)">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px">
+          <div>
+            <strong>Demonstração offline</strong>
+            <span class="muted" style="margin-left: 8px">
+              Sem backend — dados de <code>mock_data.js</code> · para vendas, onboarding e validação de conceito
+            </span>
+          </div>
+          <div class="row" style="gap: 10px">
+            <button type="button" class="btn btn-ghost" id="btn-tour-start">Tour guiado</button>
+          </div>
+        </div>
+      </div>
+
+      <header class="header">
+        <div class="brand">
+          <img class="logo" src="assets/ia-lab-logo.png" alt="ideias IA Lab" />
+          <div>
+            <div class="title">IA VideoStudio</div>
+            <div class="subtitle">Ideias Factory · Demo offline (mocks)</div>
+          </div>
+        </div>
+        <div class="header-actions">
+          <div class="pill header-pill">
+            Wizard · Fluxo → Research → Roteiro → Scenes → Assets → Visual → TTS → Compor → Publicar
+          </div>
+          <a
+            class="header-link"
+            href="#"
+            id="link_openapi_hint"
+            title="Com uvicorn em execução (laboratório): GET /swagger no host do BFF — ex.: http://127.0.0.1:8092/swagger"
+            >OpenAPI</a
+          >
+          <button
+            type="button"
+            class="health-btn"
+            id="header_health"
+            aria-label="Status dos serviços"
+            title="Verificando…"
+          >
+            <span class="health-dot" id="health_dot" data-status="unknown"></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="card">
+        <nav class="tabs" role="tablist">
+          <button class="tab is-active" data-tab="fluxo" role="tab" type="button">Fluxo</button>
+          <button class="tab" data-tab="research" role="tab" type="button">Research</button>
+          <button class="tab" data-tab="roteiro" role="tab" type="button">Roteirizador</button>
+          <button class="tab" data-tab="scenes" role="tab" type="button">Scenes</button>
+          <button class="tab" data-tab="assets" role="tab" type="button">Image Research</button>
+          <button class="tab" data-tab="visual" role="tab" type="button">Visual (GPU)</button>
+          <button class="tab" data-tab="composer" role="tab" type="button">Compor vídeo</button>
+          <button class="tab" data-tab="publish" role="tab" type="button">Publicar</button>
+        </nav>
+
+        <div class="content">
+          <section class="panel is-active" id="tab-fluxo">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Fluxo completo (estilo LangGraph)</div>
+                  <div class="tile-desc">
+                    Visão geral do pipeline do canal (nicho → upload). À direita: refino opcional no laboratório (ASR → segmentação
+                    temporal → recomposição sincronizada). Passe o mouse sobre cada passo para ver inputs/outputs.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="fluxo_tab" title="Ajuda">?</button>
+              </div>
+
+              <div class="flow-graph-wrap" id="flow_graph_wrap" aria-label="Grafo do pipeline">
+                <svg
+                  class="flow-graph"
+                  viewBox="0 0 960 1135"
+                  role="img"
+                  aria-label="Pipeline principal e ramo lab opcional: composer → asr_transcribe → timeline_segment → composer_sync"
+                >
+                  <defs>
+                    <linearGradient id="flowNode" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="rgba(124,92,255,0.22)" />
+                      <stop offset="100%" stop-color="rgba(0,212,255,0.14)" />
+                    </linearGradient>
+                    <marker id="flowArrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                      <path d="M 0 0 L 10 5 L 0 10 z" fill="rgba(169,180,214,0.75)"></path>
+                    </marker>
+                    <style>
+                      .fn{ fill: url(#flowNode); stroke: rgba(36,48,76,0.95); stroke-width: 1.2 }
+                      .ft{ fill: rgba(234,240,255,0.98); font: 800 14px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+                      .fs{ fill: rgba(169,180,214,0.95); font: 600 11px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+                      .fa{ stroke: rgba(169,180,214,0.75); stroke-width: 1.8; fill: none; marker-end: url(#flowArrow) }
+                      .fad{ stroke: rgba(169,180,214,0.55); stroke-width: 1.6; fill: none; marker-end: url(#flowArrow); stroke-dasharray: 7 6 }
+                      .fh{ fill: rgba(0,212,255,0.92); font: 800 10px ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+                      .flab{ fill: rgba(234,240,255,0.92); font: 700 12px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+                    </style>
+                  </defs>
+
+                  <path class="fa" d="M 460 80 L 460 115"></path>
+                  <path class="fa" d="M 460 195 L 460 230"></path>
+                  <path class="fa" d="M 460 310 L 460 345"></path>
+                  <path class="fa" d="M 460 425 L 460 460"></path>
+                  <path class="fa" d="M 460 540 L 460 575"></path>
+                  <path class="fa" d="M 460 655 L 460 690"></path>
+                  <path class="fa" d="M 460 770 L 460 805"></path>
+                  <path class="fa" d="M 460 885 L 460 920"></path>
+                  <path class="fa" d="M 460 1000 L 460 1035"></path>
+
+                  <!-- Ramo opcional lab (pós-composer): linha tracejada -->
+                  <path class="fad" d="M 680 730 L 690 633"></path>
+                  <path class="fad" d="M 805 668 L 805 678"></path>
+                  <path class="fad" d="M 805 748 L 805 758"></path>
+
+                  <g>
+                    <title>
+START
+Entrada: channel_niche
+Responsabilidade: iniciar um job e carregar o estado base (nicho/canal).</title>
+                    <rect class="fn" x="260" y="20" rx="16" ry="16" width="400" height="60"></rect>
+                    <text class="ft" x="460" y="48" text-anchor="middle">START</text>
+                    <text class="fs" x="460" y="66" text-anchor="middle">channel_niche</text>
+                  </g>
+
+                  <g>
+                    <title>
+research_agent (ARM)
+Responsabilidade: escolher tema + ângulo; reunir sinais (YouTube/Trends) e resumir.
+Saída: topic, angle, trending_data</title>
+                    <rect class="fn" x="240" y="115" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="145" text-anchor="middle">research_agent</text>
+                    <text class="fh" x="665" y="140" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="166" text-anchor="middle">topic · angle · trending_data</text>
+                  </g>
+
+                  <g>
+                    <title>
+script_agent (ARM)
+Responsabilidade: gerar script narrado (PT-BR) e prompts de cenas (EN) a partir do tema/ângulo.
+Saída: script, scenes[]</title>
+                    <rect class="fn" x="240" y="230" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="260" text-anchor="middle">script_agent</text>
+                    <text class="fh" x="665" y="255" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="281" text-anchor="middle">script · scenes[]</text>
+                  </g>
+
+                  <g>
+                    <title>
+asset_agent (ARM)
+Responsabilidade: buscar imagens multi-fonte (Pexels/Pixabay/Unsplash/NASA/Wikimedia) e selecionar por cena.
+Saída: raw_assets[] (auditável: url, license, local_path)</title>
+                    <rect class="fn" x="240" y="345" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="375" text-anchor="middle">asset_agent</text>
+                    <text class="fh" x="665" y="370" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="396" text-anchor="middle">raw_assets[]</text>
+                  </g>
+
+                  <g>
+                    <title>
+visual_agent (GPU)
+Responsabilidade: estilizar (img2img) e animar (AnimateDiff) assets por cena.
+Saída: clips[] (mp4 por cena)</title>
+                    <rect class="fn" x="240" y="460" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="490" text-anchor="middle">visual_agent</text>
+                    <text class="fh" x="665" y="485" text-anchor="end">GPU</text>
+                    <text class="fs" x="460" y="511" text-anchor="middle">clips[]</text>
+                  </g>
+
+                  <g>
+                    <title>
+tts_agent (ARM)
+Responsabilidade: gerar narração (Kokoro/Piper) a partir do script.
+Saída: audio_file (.wav)</title>
+                    <rect class="fn" x="240" y="575" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="605" text-anchor="middle">tts_agent</text>
+                    <text class="fh" x="665" y="600" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="626" text-anchor="middle">audio_file</text>
+                  </g>
+
+                  <g>
+                    <title>
+composer_agent (GPU)
+Responsabilidade: compor vídeo final com ffmpeg (concat clips + áudio; NVENC quando disponível).
+Saída: video_file (.mp4)</title>
+                    <rect class="fn" x="240" y="690" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="720" text-anchor="middle">composer_agent</text>
+                    <text class="fh" x="665" y="715" text-anchor="end">GPU</text>
+                    <text class="fs" x="460" y="741" text-anchor="middle">video_file</text>
+                  </g>
+
+                  <g>
+                    <title>
+asr_transcribe (lab)
+Responsabilidade: transcrever narration.wav (faster-whisper); palavras com timestamps.
+Saída: asr_words.json, VTT/SRT (POST /api/lab/asr)</title>
+                    <rect class="fn" x="690" y="598" rx="12" ry="12" width="230" height="70"></rect>
+                    <text class="flab" x="805" y="628" text-anchor="middle">asr_transcribe</text>
+                    <text class="fh" x="905" y="618" text-anchor="end">lab</text>
+                    <text class="fs" x="805" y="648" text-anchor="middle">audio_file → transcript</text>
+                  </g>
+
+                  <g>
+                    <title>
+timeline_segment_agent (ARM)
+Responsabilidade: segmentação temporal dinâmica (ASR + script_lab.txt) em K partes alinhadas aos clipes.
+Saída: aligned_timeline.json</title>
+                    <rect class="fn" x="690" y="678" rx="12" ry="12" width="230" height="70"></rect>
+                    <text class="flab" x="805" y="706" text-anchor="middle">timeline_segment_agent</text>
+                    <text class="fh" x="905" y="698" text-anchor="end">ARM</text>
+                    <text class="fs" x="805" y="726" text-anchor="middle">segments[] · start_s/end_s</text>
+                  </g>
+
+                  <g>
+                    <title>
+composer_sync_agent (GPU)
+Responsabilidade: recompor clipes com durações alinhadas ao áudio (ffmpeg; espelha video_compose_experiments).
+Saída: final_synced.mp4 (distinto de video_file)</title>
+                    <rect class="fn" x="690" y="758" rx="12" ry="12" width="230" height="70"></rect>
+                    <text class="flab" x="805" y="786" text-anchor="middle">composer_sync_agent</text>
+                    <text class="fh" x="905" y="778" text-anchor="end">GPU</text>
+                    <text class="fs" x="805" y="806" text-anchor="middle">video_synced</text>
+                  </g>
+
+                  <g>
+                    <title>
+metadata_agent (ARM)
+Responsabilidade: gerar título/descrição/tags usando LLM + trending_data.
+Saída: metadata{title, description, tags[]}</title>
+                    <rect class="fn" x="240" y="805" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="835" text-anchor="middle">metadata_agent</text>
+                    <text class="fh" x="665" y="830" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="856" text-anchor="middle">metadata{}</text>
+                  </g>
+
+                  <g>
+                    <title>
+thumbnail_card_agent (ARM)
+Responsabilidade: escolher um frame do vídeo final e gerar a thumbnail (card) com template + campos editáveis.
+Saída: thumbnail{output_path, template_id, fields}</title>
+                    <rect class="fn" x="240" y="920" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="950" text-anchor="middle">thumbnail_card_agent</text>
+                    <text class="fh" x="665" y="945" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="971" text-anchor="middle">thumbnail{}</text>
+                  </g>
+
+                  <g>
+                    <title>
+publisher_agent (ARM)
+Responsabilidade: upload no YouTube Data API v3 (privacyStatus=private na fase 1).
+Saída: publish_status (ex: uploaded:{video_id})</title>
+                    <rect class="fn" x="240" y="1035" rx="16" ry="16" width="440" height="80"></rect>
+                    <text class="ft" x="460" y="1065" text-anchor="middle">publisher_agent</text>
+                    <text class="fh" x="665" y="1060" text-anchor="end">ARM</text>
+                    <text class="fs" x="460" y="1086" text-anchor="middle">publish_status</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-research">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Research</div>
+                  <div class="tile-desc">
+                    Combine sinais de Trends com vídeos populares no YouTube e gere sugestões clicáveis para o roteirizador.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="research" title="Ajuda">?</button>
+              </div>
+
+              <div class="grid2">
+                <div>
+                  <label class="label">Keyword / tema (YouTube + Trends)</label>
+                  <input id="research_kw" class="input" value="astronomia" />
+                </div>
+                <div class="grid2" style="grid-template-columns: 1fr 1fr">
+                  <div>
+                    <label class="label">Região (YouTube + Trends)</label>
+                    <select id="research_region" class="input">
+                      <option value="BR" selected>BR — Brasil</option>
+                      <option value="US">US — Estados Unidos</option>
+                      <option value="PT">PT — Portugal</option>
+                      <option value="ES">ES — Espanha</option>
+                      <option value="MX">MX — México</option>
+                      <option value="AR">AR — Argentina</option>
+                      <option value="CL">CL — Chile</option>
+                      <option value="CO">CO — Colômbia</option>
+                      <option value="FR">FR — França</option>
+                      <option value="DE">DE — Alemanha</option>
+                      <option value="IT">IT — Itália</option>
+                      <option value="GB">GB — Reino Unido</option>
+                      <option value="JP">JP — Japão</option>
+                      <option value="IN">IN — Índia</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="label">Categoria YouTube</label>
+                    <select id="research_cat" class="input">
+                      <option value="28" selected>28 — Ciência e tecnologia</option>
+                      <option value="22">22 — People &amp; blogs</option>
+                      <option value="24">24 — Entretenimento</option>
+                      <option value="25">25 — Notícias e política</option>
+                      <option value="26">26 — Howto &amp; style</option>
+                      <option value="27">27 — Educação</option>
+                      <option value="10">10 — Música</option>
+                      <option value="20">20 — Gaming</option>
+                      <option value="17">17 — Esportes</option>
+                      <option value="19">19 — Viagens e eventos</option>
+                      <option value="15">15 — Pets &amp; animals</option>
+                      <option value="23">23 — Comedy</option>
+                      <option value="1">1 — Film &amp; animation</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <button id="btn-research" class="btn">Buscar sugestões</button>
+                <span class="muted" style="font-size: 12px">Opcional: alimenta o roteirizador com contexto real.</span>
+              </div>
+            </div>
+
+            <div class="research-results-wrap">
+              <div class="research-subtabs" role="tablist" aria-label="Resultados do research">
+                <button type="button" class="subtab is-active" data-research-sub="videos" role="tab">Vídeos</button>
+                <button type="button" class="subtab" data-research-sub="trends" role="tab">Trends</button>
+              </div>
+              <div id="research_videos" class="research-subpanel is-active research-feed"></div>
+              <div id="research_trends" class="research-subpanel research-feed"></div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-roteiro">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Roteirizador</div>
+                  <div class="tile-desc">
+                    Gere o roteiro narrado (PT-BR), textos por parte e prompts de cena — com opção de usar Ollama quando configurado.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="roteiro" title="Ajuda">?</button>
+              </div>
+
+              <div class="grid2">
+                <div>
+                  <label class="label">Tema</label>
+                  <input id="tema" class="input" value="astronomia" />
+                </div>
+                <div>
+                  <label class="label">Ângulo</label>
+                  <input id="angulo" class="input" placeholder="ex: Mitos comuns sobre buracos negros" />
+                </div>
+              </div>
+
+              <div class="grid2">
+                <div>
+                  <label class="label duration-label">
+                    <span>Duração (narração alvo)</span>
+                    <button
+                      type="button"
+                      class="icon-btn icon-btn--info"
+                      aria-label="Informações sobre duração"
+                      data-duration-info="1"
+                    >
+                      i
+                    </button>
+                  </label>
+                  <select id="duration-tier" class="input">
+                    <option value="short" selected>Curta — até ~1 min 30</option>
+                    <option value="medium">Média — ~5 min</option>
+                    <option value="long">Longa — ~10 a 15 min</option>
+                    <option value="too_long">Muito longa — ~20 a 30 min</option>
+                    <option value="custom">Personalizada (minutos)</option>
+                  </select>
+                </div>
+                <div id="duration_custom_wrap" style="display: none">
+                  <label class="label">Minutos (só se «Personalizada»; 1–60)</label>
+                  <input
+                    id="duration-custom-minutes"
+                    class="input"
+                    type="number"
+                    min="1"
+                    max="60"
+                    step="0.5"
+                    placeholder="ex.: 7"
+                  />
+                </div>
+              </div>
+
+              <div id="duration_popover" class="popover" role="dialog" aria-hidden="true">
+                <div class="popover-title">Duração (estimativa)</div>
+                <div class="popover-body">
+                  <div class="muted">
+                    A duração é uma estimativa baseada no texto (ritmo de narração varia).
+                  </div>
+                  <div style="margin-top: 10px; font-weight: 800">Estimativas por perfil</div>
+                  <ul class="popover-list">
+                    <li><strong>Curta</strong>: ~60–90s (até ~1:30)</li>
+                    <li><strong>Média</strong>: ~4:30–5:30</li>
+                    <li><strong>Longa</strong>: ~10–15 min</li>
+                    <li><strong>Muito longa</strong>: ~20–30 min</li>
+                    <li><strong>Personalizada</strong>: 1–60 min (você define)</li>
+                  </ul>
+                  <div class="muted" style="margin-top: 10px">
+                    Quanto maior o texto, mais cenas (prompts) serão geradas e maior tende a ser o tempo de
+                    produção/processamento.
+                  </div>
+                </div>
+              </div>
+
+              <div id="styleguide_popover" class="popover" role="dialog" aria-hidden="true" aria-labelledby="styleguide_popover_title">
+                <div id="styleguide_popover_title" class="popover-title">Style guide</div>
+                <div class="popover-body">
+                  <p class="muted" style="margin: 0 0 10px">
+                    É um <strong>texto curto</strong> que define o <strong>look &amp; feel</strong> dos visuais: paleta,
+                    realismo vs. ilustração, iluminação, época, humor e restrições (ex.: sem texto na imagem). Complementa
+                    o <em>prompt da cena</em>, não o substitui.
+                  </p>
+                  <p style="margin: 0 0 10px">
+                    <strong>Por que importa na pesquisa:</strong> os bancos (Pexels, Pixabay, Unsplash, etc.) devolvem
+                    muitos resultados genéricos. O style guide orienta <strong>consultas e ranking</strong>
+                    (heurística ou LLM) para candidatos mais coerentes com a identidade do canal e com o roteiro —
+                    menos ruído, mais consistência entre cenas.
+                  </p>
+                  <div style="font-weight: 800; margin-bottom: 6px">Exemplos (cole ou adapte)</div>
+                  <ul class="popover-list">
+                    <li>
+                      Documentário científico: tons escuros, alto contraste, estética espacial realista; evitar texto ou
+                      logos nas imagens.
+                    </li>
+                    <li>
+                      Ilustração flat minimalista, paleta pastel, estilo educacional (tipo Kurzgesagt); sem fotorealismo.
+                    </li>
+                    <li>
+                      Stock cinematográfico: luz dourada ao pôr do sol, profundidade de campo rasa, sensação épica e
+                      cinematográfica.
+                    </li>
+                  </ul>
+                  <div class="muted" style="margin-top: 10px">
+                    Se ficar em branco, o laboratório usa o padrão do servidor (<code>ASSET_DEFAULT_STYLE_GUIDE</code> /
+                    <code>IMAGE_RESEARCH_STYLE_GUIDE</code> no <code>.env</code>), quando configurado.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <button id="btn-angles" class="btn btn-ghost">Sugerir ângulos</button>
+                <button id="btn-generate" class="btn">Gerar</button>
+                <label class="toggle">
+                  <input id="use-ollama" type="checkbox" />
+                  <span>Usar Ollama</span>
+                </label>
+              </div>
+            </div>
+
+            <div id="angles" class="list"></div>
+
+            <div class="split">
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Roteiro base</div>
+                    <div class="tile-desc">Texto contínuo do roteiro (útil para revisão rápida e copiar/colar).</div>
+                    <div class="row" style="margin-top: 10px; flex-wrap: wrap; gap: 8px">
+                      <button type="button" class="btn btn-ghost" id="btn-copy-roteiro-clean" title="Só o texto de narração, sem IDs de parte, timecodes nem ícones da UI">
+                        Copiar narração limpa
+                      </button>
+                    </div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="roteiro" title="Ajuda">?</button>
+                </div>
+                <pre id="roteiro_base" class="pre"></pre>
+              </div>
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Textos por parte</div>
+                    <div class="tile-desc">Saída segmentada por IDs de parte (útil para montar capítulos/legendas).</div>
+                    <div class="row" style="margin-top: 10px; flex-wrap: wrap; gap: 8px">
+                      <button type="button" class="btn btn-ghost" id="btn-copy-textos-clean" title="Junta as partes só com o texto — sem cabeçalhos de parte, timecodes nem ícones da UI">
+                        Copiar só texto das partes
+                      </button>
+                    </div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="roteiro" title="Ajuda">?</button>
+                </div>
+                <div id="textos" class="stack"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-scenes">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Scenes</div>
+                  <div class="tile-desc">
+                    Prompts visuais por janela de tempo. Use para alimentar o Image Research com consistência por cena.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="scenes" title="Ajuda">?</button>
+              </div>
+
+              <div class="row">
+                <button id="btn-use-first-scene" class="btn btn-ghost">Usar 1ª cena no Image Research</button>
+              </div>
+            </div>
+            <div id="scenes" class="stack"></div>
+          </section>
+
+          <section class="panel" id="tab-assets">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Image Research</div>
+                  <div class="tile-desc">
+                    Busca candidatos de imagem por cena e mostra o selecionado pelo ranker (heurística ou Ollama, conforme env).
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+              </div>
+
+              <div class="research-subtabs" role="tablist" aria-label="Modo do Image Research" style="margin-top: 12px">
+                <button type="button" class="subtab is-active" data-assets-mode="auto" role="tab">Automático (padrão)</button>
+                <button type="button" class="subtab" data-assets-mode="manual" role="tab">Manual (por cena)</button>
+              </div>
+
+              <section id="assets_mode_auto" class="assets-mode is-active">
+                <div class="row">
+                  <div class="field field--styleguide">
+                    <label class="label duration-label">
+                      <span>Style guide</span>
+                      <button
+                        type="button"
+                        class="icon-btn icon-btn--info"
+                        aria-label="O que é o style guide e por que importa na pesquisa"
+                        data-styleguide-info="1"
+                      >
+                        i
+                      </button>
+                    </label>
+                    <input
+                      id="style_auto"
+                      class="input"
+                      value=""
+                      placeholder="(opcional) deixe em branco para usar o padrão do servidor"
+                    />
+                  </div>
+                  <div class="field">
+                    <label class="label">Preferência</label>
+                    <select id="prefer_auto" class="input">
+                      <option value="video_first" selected>Vídeos primeiro (fallback imagens)</option>
+                      <option value="image_first">Imagens primeiro</option>
+                      <option value="all">Todos (imagem ou vídeo; LLM/heurística)</option>
+                      <option value="video">Somente vídeo</option>
+                      <option value="image">Somente imagem</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label class="label">Por fonte</label>
+                    <input id="per_source_auto" class="input" type="number" value="5" min="1" max="50" />
+                  </div>
+                  <button id="btn-search-all" class="btn">Pesquisar para todas as cenas</button>
+                </div>
+
+                <div class="muted" style="font-size: 12px; margin-top: 6px">
+                  O modo automático busca e escolhe um asset para cada cena. Você pode editar uma cena individual e ajustar a seleção no modo Manual.
+                </div>
+
+                <div class="split" style="margin-top: 14px">
+                  <div class="tile">
+                    <div class="tile-head">
+                      <div>
+                        <div class="tile-title">Selecionados por cena</div>
+                        <div class="tile-desc">Resumo do selecionado por cena (auto ou manual).</div>
+                      </div>
+                      <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+                    </div>
+                    <div id="auto_selected_list" class="stack"></div>
+                  </div>
+                  <div class="tile">
+                    <div class="tile-head">
+                      <div>
+                        <div class="tile-title">Próximo passo</div>
+                        <div class="tile-desc">Quando estiver satisfeito com as seleções, teste o Visual (GPU) ou siga para Compor vídeo (mock).</div>
+                      </div>
+                      <button class="icon-btn" type="button" data-help-anchor="composer" title="Ajuda">?</button>
+                    </div>
+                    <div class="row">
+                      <button id="btn-go-composer" class="btn">Gerar vídeo</button>
+                    </div>
+                    <div class="muted" style="font-size: 12px">
+                      Este botão abre a próxima aba (Compor vídeo). Os agentes ainda não são executados aqui.
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section id="assets_mode_manual" class="assets-mode">
+                <div class="grid2">
+                  <div>
+                    <label class="label">Cena</label>
+                    <select id="scene_picker" class="input"></select>
+                  </div>
+                  <div>
+                    <label class="label duration-label">
+                      <span>Style guide</span>
+                      <button
+                        type="button"
+                        class="icon-btn icon-btn--info"
+                        aria-label="O que é o style guide e por que importa na pesquisa"
+                        data-styleguide-info="1"
+                      >
+                        i
+                      </button>
+                    </label>
+                    <input
+                      id="style"
+                      class="input"
+                      value=""
+                      placeholder="(opcional) deixe em branco para usar o padrão do servidor"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid2">
+                  <div>
+                    <label class="label">Prompt da cena</label>
+                    <textarea id="scene" class="textarea" rows="3" placeholder="Selecione uma cena acima"></textarea>
+                  </div>
+                  <div>
+                    <label class="label">Preferência</label>
+                    <select id="prefer" class="input">
+                      <option value="video_first" selected>Vídeos primeiro (fallback imagens)</option>
+                      <option value="image_first">Imagens primeiro</option>
+                      <option value="all">Todos (imagem ou vídeo; LLM/heurística)</option>
+                      <option value="video">Somente vídeo</option>
+                      <option value="image">Somente imagem</option>
+                    </select>
+                    <label class="label">Por fonte</label>
+                    <input id="per_source" class="input" type="number" value="5" min="1" max="50" />
+                    <div class="row" style="justify-content:flex-end">
+                      <button id="btn-search" class="btn">Pesquisar</button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="split">
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Selecionado</div>
+                    <div class="tile-desc">O asset escolhido pelo ranker e o motivo (quando disponível).</div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+                </div>
+                <div id="selected" class="stack"></div>
+              </div>
+              <div class="tile">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Candidatos</div>
+                    <div class="tile-desc">Lista completa retornada pela busca (para inspeção e auditoria).</div>
+                  </div>
+                  <button class="icon-btn" type="button" data-help-anchor="assets" title="Ajuda">?</button>
+                </div>
+                <div id="assets" class="stack"></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-visual">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Visual (GPU) — laboratório</div>
+                  <div class="tile-desc">
+                    Chama o mesmo fluxo de <code>agents.visual_agent</code> para uma imagem: ComfyUI + AnimateDiff quando
+                    configurado; senão fallback ffmpeg (imagem estática → clipe curto). O BFF precisa de
+                    <code>ffmpeg</code>; para GPU real use <code>COMFYUI_INPUT_METHOD=upload</code> (API) ou
+                    <code>copy</code> com <code>COMFYUI_INPUT_DIR</code> no mesmo disco/NFS que o ComfyUI vê.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="visual" title="Ajuda">?</button>
+              </div>
+
+              <div class="grid2">
+                <div class="field">
+                  <label class="label">URL da imagem</label>
+                  <input id="visual_image_url" class="input" type="url" placeholder="https://…" autocomplete="off" />
+                </div>
+                <div class="field">
+                  <label class="label">scene_idx</label>
+                  <input id="visual_scene_idx" class="input" type="number" value="0" min="0" max="999" />
+                </div>
+              </div>
+
+              <div class="field" style="margin-top: 10px">
+                <label class="label">
+                  <input id="visual_preview_use_comfy" type="checkbox" checked />
+                  Usar ComfyUI (AnimateDiff) quando disponível
+                </label>
+              </div>
+              <div class="row" style="margin-top: 10px">
+                <button id="btn-visual-fill" class="btn btn-ghost" type="button">Usar imagem selecionada</button>
+                <button id="btn-visual-preview" class="btn" type="button">Gerar clipe (preview)</button>
+              </div>
+
+              <div id="visual_status" class="muted" style="margin-top: 12px; font-size: 12px"></div>
+
+              <div class="tile" style="margin-top: 14px">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Pré-visualização</div>
+                    <div class="tile-desc">Em caso de sucesso, o MP4 é carregado abaixo.</div>
+                  </div>
+                </div>
+                <video id="visual_video" controls playsinline style="width: 100%; max-width: 720px; display: none"></video>
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-composer">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Compor vídeo (agentes reais)</div>
+                  <div class="tile-desc">
+                    Pré-requisitos: roteiro com textos para TTS; uma imagem selecionada por cena no Image Research. Os
+                    passos usam o mesmo <code>job_token</code> no servidor (TTS → clipes → final). Provider TTS:
+                    <code>TTS_PROVIDER</code> / env (Kokoro, Piper, etc.).
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="composer" title="Ajuda">?</button>
+              </div>
+
+              <div id="composer_prereq" class="muted" style="font-size: 12px; margin-bottom: 10px"></div>
+
+              <div class="grid2">
+                <div class="field">
+                  <label class="label">Job (sessão)</label>
+                  <input id="composer_job_token" class="input" type="text" readonly placeholder="Gerado após o 1.º passo" />
+                </div>
+                <div class="field">
+                  <label class="label"> </label>
+                  <button id="btn-composer-new-job" class="btn btn-ghost" type="button">Novo job</button>
+                </div>
+              </div>
+
+              <div class="row" style="flex-wrap: wrap; gap: 8px">
+                <button id="btn-composer-tts" class="btn" type="button">1. Gerar TTS (narration.wav)</button>
+                <button id="btn-composer-visual" class="btn" type="button" disabled>2. Gerar clipes (visual_agent)</button>
+                <button id="btn-composer-final" class="btn" type="button" disabled>3. Gerar vídeo final (composer)</button>
+                <button id="btn-composer-asr" class="btn" type="button" disabled>4. ASR (legendas VTT/SRT)</button>
+                <button id="btn-composer-sync" class="btn" type="button" disabled>5. Sincronismo avançado</button>
+              </div>
+
+              <div class="field" style="margin-top: 10px">
+                <label class="label">
+                  <input id="composer_visual_use_comfy" type="checkbox" checked />
+                  Usar ComfyUI (AnimateDiff) no passo 2, quando disponível
+                </label>
+              </div>
+
+              <div class="grid2" style="margin-top: 10px">
+                <div>
+                  <label class="label">TTS Provider</label>
+                  <select id="tts_provider" class="input">
+                    <option value="kokoro" selected>Kokoro</option>
+                    <option value="piper">Piper</option>
+                  </select>
+                </div>
+                <div id="tts_lang_wrap">
+                  <label class="label" id="tts_lang_label">Idioma</label>
+                  <select id="tts_lang" class="input">
+                    <option value="pt-br" selected>pt-br</option>
+                    <option value="en-us">en-us</option>
+                    <option value="en-gb">en-gb</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid2" style="margin-top: 10px">
+                <div>
+                  <label class="label" id="tts_voice_label">Voz</label>
+                  <select id="tts_voice" class="input">
+                    <option value="pf_dora" selected>pf_dora (PT-BR)</option>
+                    <option value="pm_alex">pm_alex (PT-BR)</option>
+                    <option value="pm_santa">pm_santa (PT-BR)</option>
+                  </select>
+                  <p class="muted" style="font-size: 11px; margin-top: 6px; line-height: 1.4">
+                    Ao mudar a voz ou o modelo, toca-se uma amostra curta (ficheiros em
+                    <code>voices_samples/</code>; gere com <code>python scripts/generate_voice_samples.py</code>).
+                  </p>
+                </div>
+                <div>
+                  <label class="label">Velocidade</label>
+                  <input id="tts_speed" class="input" type="number" value="1.0" min="0.5" max="2.0" step="0.05" />
+                </div>
+              </div>
+
+              <div id="composer_audio_section" class="tile" style="margin-top: 12px; display: none">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Áudio (narração)</div>
+                    <div class="tile-desc">Disponível após <strong>1. Gerar TTS</strong> — resultado do agente neste job.</div>
+                  </div>
+                </div>
+                <audio id="tts_audio" controls style="width: 100%"></audio>
+              </div>
+
+              <div id="composer_video_section" class="tile" style="margin-top: 12px; display: none">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Vídeo final</div>
+                    <div class="tile-desc">Disponível após <strong>3. Gerar vídeo final</strong> (ffmpeg no BFF).</div>
+                  </div>
+                </div>
+                <video id="composer_video" controls playsinline style="width: 100%; max-width: 720px; display: none"></video>
+              </div>
+
+              <div id="composer_synced_section" class="tile" style="margin-top: 12px; display: none">
+                <div class="tile-head">
+                  <div>
+                    <div class="tile-title">Vídeo sincronizado (lab)</div>
+                    <div class="tile-desc">
+                      Disponível após <strong>5. Sincronismo avançado</strong> — timeline alinhada ao áudio (recomposição por
+                      segmento).
+                    </div>
+                  </div>
+                </div>
+                <video id="composer_video_synced" controls playsinline style="width: 100%; max-width: 720px; display: none"></video>
+              </div>
+
+              <div id="composer_status" class="muted" style="margin-top: 10px; font-size: 12px"></div>
+              <div id="asr_links" class="muted" style="margin-top: 8px; font-size: 12px"></div>
+            </div>
+          </section>
+
+          <section class="panel" id="tab-publish">
+            <div class="tile">
+              <div class="tile-head">
+                <div>
+                  <div class="tile-title">Publicar (YouTube + mock)</div>
+                  <div class="tile-desc">
+                    Metadados com opção LLM, OAuth para listar canais, upload real do <code>final.mp4</code> do job (com
+                    confirmação) ou simulação local.
+                  </div>
+                </div>
+                <button class="icon-btn" type="button" data-help-anchor="publisher" title="Ajuda">?</button>
+              </div>
+
+              <div class="split">
+                <div class="tile">
+                  <div class="tile-head">
+                    <div>
+                      <div class="tile-title">Metadados</div>
+                      <div class="tile-desc">Título, descrição (com capítulos) e tags.</div>
+                    </div>
+                  </div>
+
+                  <div class="stack">
+                    <div class="block" style="margin: 0">
+                      <div class="suggestion-head">
+                        <div class="k">YouTube</div>
+                        <button class="icon-btn" type="button" data-help-anchor="publisher" title="Ajuda">?</button>
+                      </div>
+                      <div class="yt-conn-row">
+                        <span id="yt_conn_badge" class="yt-conn-badge" data-yt-status="unknown">Verificando…</span>
+                      </div>
+                      <div class="row" style="justify-content: space-between; margin-top: 10px">
+                        <button id="btn-yt-connect" class="btn btn-ghost" type="button">Conectar YouTube</button>
+                        <button id="btn-yt-refresh" class="btn" type="button">Carregar canais</button>
+                      </div>
+                      <div style="margin-top: 10px">
+                        <label class="label">Job (final.mp4) — copiado da aba Compor vídeo</label>
+                        <input id="pub_job_token" class="input" type="text" readonly placeholder="Execute TTS/compositor na aba Compor" />
+                      </div>
+                      <div style="margin-top: 10px">
+                        <label class="label">Canal (obrigatório)</label>
+                        <select id="pub_channel" class="input"></select>
+                      </div>
+                      <div id="yt_status" class="muted" style="font-size: 12px; margin-top: 8px"></div>
+                    </div>
+                    <div>
+                      <label class="label">Sugestões de título (Growth Engine / LLM)</label>
+                      <select id="pub_title_variants" class="input">
+                        <option value="" selected>— Gere metadados (LLM ou Growth) para ver sugestões —</option>
+                      </select>
+                      <div class="muted" style="font-size: 12px; margin-top: 6px">
+                        Selecione uma variante ou edite manualmente no campo seguinte.
+                      </div>
+                    </div>
+                    <div>
+                      <label class="label">Título</label>
+                      <input id="pub_title" class="input" placeholder="Título do vídeo" />
+                    </div>
+                    <div>
+                      <label class="label">Descrições sugeridas</label>
+                      <select id="pub_description_variants" class="input">
+                        <option value="" selected>— Gere metadados para ver textos completos —</option>
+                      </select>
+                      <div class="muted" style="font-size: 12px; margin-top: 6px">
+                        Pré-visualização curta; o texto integral vai para o campo abaixo (editável).
+                      </div>
+                    </div>
+                    <div>
+                      <label class="label">Descrição (inclua capítulos)</label>
+                      <textarea id="pub_description" class="textarea" rows="10" placeholder="Descrição completa"></textarea>
+                    </div>
+                    <div>
+                      <label class="label">Tags (separadas por vírgula)</label>
+                      <input id="pub_tags" class="input" placeholder="astronomia, espaço, ..." />
+                    </div>
+                    <div class="grid2">
+                      <div>
+                        <label class="label">Público-alvo</label>
+                        <input id="pub_publico_alvo" class="input" placeholder="ex.: curiosos por ciência, 18–35" />
+                      </div>
+                      <div>
+                        <label class="label">Objetivo do vídeo</label>
+                        <input id="pub_objetivo_video" class="input" placeholder="ex.: educar e maximizar retenção" />
+                      </div>
+                    </div>
+                    <div class="row" style="justify-content:flex-end; flex-wrap: wrap; gap: 8px">
+                      <button id="btn-pub-llm-meta" class="btn" type="button">Gerar metadados (LLM)</button>
+                      <button id="btn-pub-growth-meta" class="btn" type="button">Gerar metadados (Growth Engine)</button>
+                      <button id="btn-pub-save-meta" class="btn btn-ghost" type="button">Salvar metadados</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tile">
+                  <div class="tile-head">
+                    <div>
+                      <div class="tile-title">Card do vídeo (thumbnail)</div>
+                      <div class="tile-desc">Gera `thumbnail.png` no job (template simples + frame do `final.mp4`).</div>
+                    </div>
+                  </div>
+
+                  <div class="stack">
+                    <div class="thumb-preview-wrap">
+                      <img id="thumb_preview" class="thumb-preview" alt="Preview do card" />
+                    </div>
+
+                    <div>
+                      <label class="label">Conceito (Growth Engine)</label>
+                      <select id="thumb_concept" class="input">
+                        <option value="" selected>— Gere metadados no Growth Engine para ver conceitos —</option>
+                      </select>
+                      <div class="muted" style="font-size: 12px; margin-top: 6px">
+                        Preenche template e título curto; você pode editar depois.
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="label">Template do card</label>
+                      <input type="hidden" id="thumb_template" value="logo_brand" />
+                      <div id="thumb_template_grid" class="thumb-template-grid" role="group" aria-label="Modelos de thumbnail"></div>
+                      <p class="muted" style="font-size: 11px; margin-top: 6px; line-height: 1.4">
+                        Ícones ilustram o estilo; o PNG final usa um frame do <code>final.mp4</code>.
+                      </p>
+                    </div>
+
+                    <div class="grid2">
+                      <div>
+                        <label class="label">Cor da marca (hex)</label>
+                        <input id="thumb_brand_color" class="input" value="#7c5cff" />
+                      </div>
+                      <div>
+                        <label class="label">Título curto (para o card)</label>
+                        <input id="thumb_title" class="input" placeholder="ex.: GPS no espaço?" />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label class="label">Logo / foto (upload opcional)</label>
+                      <input id="thumb_logo_file" class="input" type="file" accept="image/*" />
+                    </div>
+
+                    <div>
+                      <label class="label">Upload de thumbnail pronta (substitui o template)</label>
+                      <input id="thumb_upload_file" class="input" type="file" accept="image/*" />
+                    </div>
+
+                    <div class="row" style="justify-content:space-between; flex-wrap: wrap; gap: 8px">
+                      <button id="btn-generate-thumb" class="btn" type="button">Gerar thumbnail</button>
+                      <button id="btn-youtube-upload-real" class="btn" type="button">Enviar ao YouTube (OAuth)</button>
+                      <button id="btn-publish-video" class="btn btn-ghost" type="button">Simular publicação (mock)</button>
+                    </div>
+                    <div id="publish_status" class="muted" style="font-size:12px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Demo offline · sem autenticação · sem servidor</span>
+        <span class="muted">
+          <a href="terms.html" target="_blank" rel="noopener">Termos</a>
+          · <a href="privacy.html" target="_blank" rel="noopener">Privacidade</a>
+          · Abra <code>index.html</code> localmente ou sirva esta pasta com HTTP estático · OpenAPI em <code>workshop/bff/lab_server.py</code>
+        </span>
+      </footer>
+    </main>
+
+    <dialog id="help_dialog" class="modal">
+      <div class="modal-head">
+        <div class="modal-title">Ajuda</div>
+        <button id="help_close" class="btn btn-ghost" type="button">Fechar</button>
+      </div>
+      <iframe id="help_frame" class="modal-frame" title="Documentação"></iframe>
+    </dialog>
+
+    <dialog id="dialog_youtube_upload" class="modal">
+      <div class="modal-head">
+        <div class="modal-title">Confirmar upload para o YouTube</div>
+        <button id="btn_upload_cancel" class="btn btn-ghost" type="button">Cancelar</button>
+      </div>
+      <pre id="upload_confirm_summary" class="muted" style="white-space: pre-wrap; max-width: 520px; font-size: 13px"></pre>
+      <div class="row" style="justify-content: flex-end; gap: 8px; margin-top: 12px">
+        <button id="btn_upload_confirm" class="btn" type="button">Confirmar envio</button>
+      </div>
+    </dialog>
+
+    <dialog id="demo_health_dialog" class="modal">
+      <div class="modal-head">
+        <div class="modal-title">/health (simulado)</div>
+        <button id="demo_health_close" class="btn btn-ghost" type="button">Fechar</button>
+      </div>
+      <p class="muted" style="margin: 0 0 10px; font-size: 13px">
+        Payload de exemplo — na instalação real reflete Ollama, pytrends e chaves de API.
+      </p>
+      <pre id="demo_health_pre" class="pre" style="max-height: min(420px, 50vh); overflow: auto"></pre>
+    </dialog>
+
+    <script src="js/mock_data.js?v=6"></script>
+    <script src="js/mock_api.js?v=6"></script>
+    <script src="js/chart.umd.min.js?v=4.4.1"></script>
+    <script src="js/app.js?v=42"></script>
+    <script src="js/tour.js?v=12"></script>
+    <script src="js/demo_analytics.js?v=10"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var oa = document.getElementById("link_openapi_hint");
+        if (oa) {
+          oa.addEventListener("click", function (e) {
+            e.preventDefault();
+          });
+        }
+        var b = document.getElementById("btn-tour-start");
+        if (b && window.VideoStudioDemoTour) {
+          b.addEventListener("click", function () {
+            window.VideoStudioDemoTour.start();
+          });
+        }
+        if (window.VideoStudioDemoTour) {
+          window.VideoStudioDemoTour.offerOnFirstVisit();
+        }
+        var hc = document.getElementById("demo_health_close");
+        var hd = document.getElementById("demo_health_dialog");
+        if (hc && hd) {
+          hc.addEventListener("click", function () {
+            if (typeof hd.close === "function") hd.close();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
+

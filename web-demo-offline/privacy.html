@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Política de Privacidade — IA VideoStudio</title>
+    <link rel="stylesheet" href="css/styles.css?v=23" />
+    <style>
+      .doc {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 22px 20px 28px;
+      }
+      .doc h1 {
+        font-size: 1.35rem;
+        font-weight: 800;
+        margin: 0 0 10px;
+        line-height: 1.25;
+      }
+      .doc .lead {
+        color: var(--muted);
+        line-height: 1.65;
+        margin: 0 0 18px;
+        font-size: 0.95rem;
+      }
+      .doc h2 {
+        font-size: 1.05rem;
+        font-weight: 800;
+        margin: 22px 0 10px;
+        color: var(--text);
+        padding-top: 10px;
+        border-top: 1px solid rgba(36, 48, 76, 0.55);
+      }
+      .doc h3 {
+        font-size: 0.98rem;
+        font-weight: 800;
+        margin: 16px 0 8px;
+        color: var(--text);
+      }
+      .doc p,
+      .doc li {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 0.95rem;
+      }
+      .doc p {
+        margin: 0 0 12px;
+      }
+      .doc ul {
+        margin: 0 0 14px;
+        padding-left: 1.15rem;
+      }
+      .doc li {
+        margin-bottom: 8px;
+      }
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 10px;
+      }
+      .topbar a {
+        color: var(--brand2);
+        text-decoration: none;
+        font-weight: 700;
+      }
+      .topbar a:hover {
+        text-decoration: underline;
+      }
+      .meta {
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--stroke);
+        background: rgba(6, 10, 20, 0.35);
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main class="doc card" style="margin: 18px auto">
+      <div class="topbar">
+        <a href="/">← Voltar</a>
+        <span class="pill">Documento informativo · versão para laboratório</span>
+      </div>
+
+      <h1>Política de Privacidade (LGPD + GDPR)</h1>
+      <p class="lead">
+        Esta Política descreve como tratamos dados pessoais no IA VideoStudio / Video Pipeline. Para versionamento oficial, use também os PDFs gerados em <code>docs/legal/</code>.
+      </p>
+      <div class="meta"><strong>Última atualização:</strong> 2026-04-15</div>
+
+      <h2>1) Definições</h2>
+      <p>
+        “Dados pessoais” são informações relacionadas a pessoa natural identificada/identificável. “Tratamento” inclui coletar, usar, armazenar, compartilhar e excluir.
+      </p>
+
+      <h2>2) Quais dados tratamos</h2>
+
+      <h3>2.1 Dados fornecidos por você (inputs)</h3>
+      <ul>
+        <li>Nicho/canal, tema, ângulo, prompts, roteiros e descrições de cenas.</li>
+        <li>Preferências e parâmetros de execução.</li>
+      </ul>
+
+      <h3>2.2 Dados gerados (saídas)</h3>
+      <ul>
+        <li>Roteiros, metadados (título/descrição/tags), narração (áudio), imagens/clipes e vídeo final.</li>
+        <li>Identificadores técnicos do job e caminhos/arquivos associados.</li>
+      </ul>
+
+      <h3>2.3 Dados de integrações (quando habilitadas)</h3>
+      <ul>
+        <li>Tokens e identificadores necessários para conectar e operar integrações (ex.: YouTube/Google).</li>
+        <li>Chaves de API fornecidas por você para provedores de terceiros (quando aplicável).</li>
+      </ul>
+
+      <h3>2.4 Dados técnicos e logs</h3>
+      <ul>
+        <li>Logs de execução (data/hora, etapa, métricas, erros) e dados técnicos necessários para segurança/troubleshooting (ex.: IP e user-agent).</li>
+      </ul>
+
+      <h2>3) Para que usamos os dados (finalidades)</h2>
+      <ul>
+        <li><strong>Prestar o Serviço</strong>: executar o pipeline e produzir as saídas solicitadas.</li>
+        <li><strong>Operar integrações</strong>: autenticar e executar ações solicitadas (ex.: upload).</li>
+        <li><strong>Segurança</strong>: prevenir abuso e proteger o Serviço.</li>
+        <li><strong>Suporte</strong>: diagnosticar falhas e atender solicitações.</li>
+        <li><strong>Melhoria</strong>: analisar desempenho/estabilidade (preferencialmente com dados agregados).</li>
+        <li><strong>Cumprimento legal</strong>: atender obrigações aplicáveis.</li>
+      </ul>
+
+      <h2>4) Bases legais</h2>
+      <ul>
+        <li><strong>Execução de contrato/serviço</strong> (LGPD art. 7º, V; GDPR art. 6(1)(b)).</li>
+        <li><strong>Legítimo interesse</strong> (LGPD art. 7º, IX; GDPR art. 6(1)(f)) para segurança e melhoria, com salvaguardas.</li>
+        <li><strong>Consentimento</strong> (LGPD art. 7º, I; GDPR art. 6(1)(a)) quando exigido.</li>
+        <li><strong>Obrigação legal</strong> (LGPD art. 7º, II; GDPR art. 6(1)(c)).</li>
+      </ul>
+
+      <h2>5) Compartilhamento</h2>
+      <p>
+        Compartilhamos dados apenas quando necessário para operar o Serviço, por exemplo com provedores de infraestrutura, APIs integradas (YouTube/Google, bancos de imagem)
+        e provedores de IA (quando configurado para usar serviços externos).
+      </p>
+
+      <h2>6) Retenção</h2>
+      <p>Guardamos dados pelo tempo necessário para as finalidades descritas. Critérios sugeridos (ajuste conforme sua operação):</p>
+      <ul>
+        <li>Logs técnicos: até <strong>90 dias</strong> (salvo necessidade de segurança/investigação).</li>
+        <li>Jobs e arquivos gerados: até <strong>30 dias</strong> após conclusão, ou até você solicitar exclusão antes.</li>
+        <li>Tokens de integração: enquanto a integração estiver ativa; você pode revogar/desconectar.</li>
+      </ul>
+
+      <h2>7) Seus direitos</h2>
+      <p>
+        Você pode solicitar acesso, correção, portabilidade (quando aplicável), oposição e exclusão, nos limites legais. Você também pode reclamar à ANPD (Brasil) e/ou
+        autoridade supervisora no EEE/UK, quando aplicável.
+      </p>
+
+      <h2>8) Como solicitar exclusão</h2>
+      <p>
+        Envie e-mail para <strong>privacidade@ideiasfactory.com.br</strong> (ajuste se necessário), com o assunto “Exclusão de dados — LGPD/GDPR” e o escopo do pedido
+        (ex.: “excluir tudo”, “excluir jobs”, “excluir integrações”). Podemos solicitar confirmação de identidade.
+      </p>
+
+      <h2>9) Contato do Controlador</h2>
+      <p><strong>Ideias Factory</strong> — contato: <strong>privacidade@ideiasfactory.com.br</strong> (ajuste se necessário).</p>
+    </main>
+  </body>
+</html>
+

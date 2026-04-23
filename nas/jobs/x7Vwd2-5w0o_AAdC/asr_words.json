@@ -1,0 +1,1061 @@
+{
+  "language": "pt",
+  "duration_s": 73.3866875,
+  "words": [
+    {
+      "word": "Você",
+      "start": 0.0,
+      "end": 0.24
+    },
+    {
+      "word": "sabia",
+      "start": 0.24,
+      "end": 0.66
+    },
+    {
+      "word": "que",
+      "start": 0.66,
+      "end": 0.9
+    },
+    {
+      "word": "Orione,",
+      "start": 0.9,
+      "end": 1.32
+    },
+    {
+      "word": "um",
+      "start": 1.44,
+      "end": 1.56
+    },
+    {
+      "word": "dos",
+      "start": 1.56,
+      "end": 1.68
+    },
+    {
+      "word": "mais",
+      "start": 1.68,
+      "end": 1.92
+    },
+    {
+      "word": "famosos",
+      "start": 1.92,
+      "end": 2.56
+    },
+    {
+      "word": "astros",
+      "start": 2.56,
+      "end": 3.04
+    },
+    {
+      "word": "do",
+      "start": 3.04,
+      "end": 3.2
+    },
+    {
+      "word": "Zodíaco,",
+      "start": 3.2,
+      "end": 3.9
+    },
+    {
+      "word": "tem",
+      "start": 4.02,
+      "end": 4.18
+    },
+    {
+      "word": "uma",
+      "start": 4.18,
+      "end": 4.36
+    },
+    {
+      "word": "história",
+      "start": 4.36,
+      "end": 4.68
+    },
+    {
+      "word": "incrível,",
+      "start": 4.68,
+      "end": 5.3
+    },
+    {
+      "word": "uma",
+      "start": 5.66,
+      "end": 5.82
+    },
+    {
+      "word": "história",
+      "start": 5.82,
+      "end": 6.2
+    },
+    {
+      "word": "de",
+      "start": 6.2,
+      "end": 6.34
+    },
+    {
+      "word": "ajuda",
+      "start": 6.34,
+      "end": 6.66
+    },
+    {
+      "word": "e",
+      "start": 6.66,
+      "end": 6.76
+    },
+    {
+      "word": "construção.",
+      "start": 6.76,
+      "end": 7.44
+    },
+    {
+      "word": "Hoje",
+      "start": 8.02,
+      "end": 8.36
+    },
+    {
+      "word": "vamos",
+      "start": 8.36,
+      "end": 8.64
+    },
+    {
+      "word": "explorar",
+      "start": 8.64,
+      "end": 9.26
+    },
+    {
+      "word": "o",
+      "start": 9.26,
+      "end": 9.34
+    },
+    {
+      "word": "mito",
+      "start": 9.34,
+      "end": 9.6
+    },
+    {
+      "word": "de",
+      "start": 9.6,
+      "end": 9.7
+    },
+    {
+      "word": "como",
+      "start": 9.7,
+      "end": 9.86
+    },
+    {
+      "word": "Orione",
+      "start": 9.86,
+      "end": 10.34
+    },
+    {
+      "word": "ajudou",
+      "start": 10.34,
+      "end": 10.78
+    },
+    {
+      "word": "a",
+      "start": 10.78,
+      "end": 10.86
+    },
+    {
+      "word": "construir",
+      "start": 10.86,
+      "end": 11.3
+    },
+    {
+      "word": "o",
+      "start": 11.3,
+      "end": 11.44
+    },
+    {
+      "word": "Zodíaco.",
+      "start": 11.44,
+      "end": 12.16
+    },
+    {
+      "word": "Prepare",
+      "start": 12.6,
+      "end": 12.96
+    },
+    {
+      "word": "-se",
+      "start": 12.96,
+      "end": 13.22
+    },
+    {
+      "word": "para",
+      "start": 13.22,
+      "end": 13.4
+    },
+    {
+      "word": "uma",
+      "start": 13.4,
+      "end": 13.54
+    },
+    {
+      "word": "jornada",
+      "start": 13.54,
+      "end": 13.98
+    },
+    {
+      "word": "através",
+      "start": 13.98,
+      "end": 14.32
+    },
+    {
+      "word": "do",
+      "start": 14.32,
+      "end": 14.56
+    },
+    {
+      "word": "tempo",
+      "start": 14.56,
+      "end": 14.94
+    },
+    {
+      "word": "e",
+      "start": 14.94,
+      "end": 15.12
+    },
+    {
+      "word": "da",
+      "start": 15.12,
+      "end": 15.22
+    },
+    {
+      "word": "astronomia.",
+      "start": 15.22,
+      "end": 15.92
+    },
+    {
+      "word": "Orione",
+      "start": 16.36,
+      "end": 16.76
+    },
+    {
+      "word": "foi",
+      "start": 16.76,
+      "end": 16.92
+    },
+    {
+      "word": "um",
+      "start": 16.92,
+      "end": 17.04
+    },
+    {
+      "word": "caçador",
+      "start": 17.04,
+      "end": 17.5
+    },
+    {
+      "word": "grego",
+      "start": 17.5,
+      "end": 17.94
+    },
+    {
+      "word": "que",
+      "start": 17.94,
+      "end": 18.1
+    },
+    {
+      "word": "morreu",
+      "start": 18.1,
+      "end": 18.42
+    },
+    {
+      "word": "jovem,",
+      "start": 18.42,
+      "end": 18.98
+    },
+    {
+      "word": "mas",
+      "start": 19.28,
+      "end": 19.38
+    },
+    {
+      "word": "sua",
+      "start": 19.38,
+      "end": 19.52
+    },
+    {
+      "word": "memória",
+      "start": 19.52,
+      "end": 19.86
+    },
+    {
+      "word": "viveu",
+      "start": 19.86,
+      "end": 20.34
+    },
+    {
+      "word": "na",
+      "start": 20.34,
+      "end": 20.46
+    },
+    {
+      "word": "forma",
+      "start": 20.46,
+      "end": 20.76
+    },
+    {
+      "word": "de",
+      "start": 20.76,
+      "end": 20.96
+    },
+    {
+      "word": "uma",
+      "start": 20.96,
+      "end": 21.1
+    },
+    {
+      "word": "constelação",
+      "start": 21.1,
+      "end": 21.84
+    },
+    {
+      "word": "celeste.",
+      "start": 21.84,
+      "end": 22.4
+    },
+    {
+      "word": "Acredite",
+      "start": 23.0,
+      "end": 23.56
+    },
+    {
+      "word": "-se",
+      "start": 23.56,
+      "end": 23.82
+    },
+    {
+      "word": "ou",
+      "start": 23.82,
+      "end": 23.96
+    },
+    {
+      "word": "não.",
+      "start": 23.96,
+      "end": 24.14
+    },
+    {
+      "word": "O",
+      "start": 24.38,
+      "end": 24.5
+    },
+    {
+      "word": "Zodíaco",
+      "start": 24.5,
+      "end": 25.08
+    },
+    {
+      "word": "tem",
+      "start": 25.08,
+      "end": 25.34
+    },
+    {
+      "word": "sua",
+      "start": 25.34,
+      "end": 25.52
+    },
+    {
+      "word": "origem",
+      "start": 25.52,
+      "end": 25.94
+    },
+    {
+      "word": "em",
+      "start": 25.94,
+      "end": 26.14
+    },
+    {
+      "word": "mitos",
+      "start": 26.14,
+      "end": 26.58
+    },
+    {
+      "word": "e",
+      "start": 26.58,
+      "end": 26.72
+    },
+    {
+      "word": "lendas",
+      "start": 26.72,
+      "end": 27.04
+    },
+    {
+      "word": "antigas.",
+      "start": 27.04,
+      "end": 27.8
+    },
+    {
+      "word": "E",
+      "start": 27.8,
+      "end": 28.24
+    },
+    {
+      "word": "Orione",
+      "start": 28.24,
+      "end": 28.52
+    },
+    {
+      "word": "é",
+      "start": 28.52,
+      "end": 28.68
+    },
+    {
+      "word": "parte",
+      "start": 28.68,
+      "end": 28.9
+    },
+    {
+      "word": "disso.",
+      "start": 28.9,
+      "end": 29.42
+    },
+    {
+      "word": "Imagine",
+      "start": 29.86,
+      "end": 30.24
+    },
+    {
+      "word": "um",
+      "start": 30.24,
+      "end": 30.5
+    },
+    {
+      "word": "homem",
+      "start": 30.5,
+      "end": 30.68
+    },
+    {
+      "word": "que",
+      "start": 30.68,
+      "end": 30.88
+    },
+    {
+      "word": "viveu",
+      "start": 30.88,
+      "end": 31.3
+    },
+    {
+      "word": "a",
+      "start": 31.3,
+      "end": 31.34
+    },
+    {
+      "word": "mais",
+      "start": 31.34,
+      "end": 31.6
+    },
+    {
+      "word": "de",
+      "start": 31.6,
+      "end": 31.74
+    },
+    {
+      "word": "dois",
+      "start": 31.74,
+      "end": 31.92
+    },
+    {
+      "word": "mil",
+      "start": 31.92,
+      "end": 32.1
+    },
+    {
+      "word": "anos",
+      "start": 32.1,
+      "end": 32.44
+    },
+    {
+      "word": "e",
+      "start": 32.44,
+      "end": 32.76
+    },
+    {
+      "word": "suas",
+      "start": 32.76,
+      "end": 32.92
+    },
+    {
+      "word": "ações",
+      "start": 32.92,
+      "end": 33.28
+    },
+    {
+      "word": "criaram",
+      "start": 33.28,
+      "end": 33.72
+    },
+    {
+      "word": "uma",
+      "start": 33.72,
+      "end": 33.9
+    },
+    {
+      "word": "constelação",
+      "start": 33.9,
+      "end": 34.6
+    },
+    {
+      "word": "que",
+      "start": 34.6,
+      "end": 34.74
+    },
+    {
+      "word": "podemos",
+      "start": 34.74,
+      "end": 35.12
+    },
+    {
+      "word": "ver",
+      "start": 35.12,
+      "end": 35.36
+    },
+    {
+      "word": "no",
+      "start": 35.36,
+      "end": 35.52
+    },
+    {
+      "word": "céu",
+      "start": 35.52,
+      "end": 35.72
+    },
+    {
+      "word": "hoje.",
+      "start": 35.72,
+      "end": 36.12
+    },
+    {
+      "word": "Isso",
+      "start": 36.46,
+      "end": 36.72
+    },
+    {
+      "word": "é",
+      "start": 36.72,
+      "end": 36.86
+    },
+    {
+      "word": "o",
+      "start": 36.86,
+      "end": 36.88
+    },
+    {
+      "word": "mito",
+      "start": 36.88,
+      "end": 37.14
+    },
+    {
+      "word": "de",
+      "start": 37.14,
+      "end": 37.26
+    },
+    {
+      "word": "Orione.",
+      "start": 37.26,
+      "end": 37.68
+    },
+    {
+      "word": "Ele",
+      "start": 38.0,
+      "end": 38.12
+    },
+    {
+      "word": "foi",
+      "start": 38.12,
+      "end": 38.28
+    },
+    {
+      "word": "um",
+      "start": 38.28,
+      "end": 38.4
+    },
+    {
+      "word": "caçador",
+      "start": 38.4,
+      "end": 38.88
+    },
+    {
+      "word": "habilidoso",
+      "start": 38.88,
+      "end": 39.64
+    },
+    {
+      "word": "e",
+      "start": 39.64,
+      "end": 39.74
+    },
+    {
+      "word": "forte,",
+      "start": 39.74,
+      "end": 40.08
+    },
+    {
+      "word": "mas",
+      "start": 40.3,
+      "end": 40.4
+    },
+    {
+      "word": "sua",
+      "start": 40.4,
+      "end": 40.54
+    },
+    {
+      "word": "vida",
+      "start": 40.54,
+      "end": 40.78
+    },
+    {
+      "word": "foi",
+      "start": 40.78,
+      "end": 41.02
+    },
+    {
+      "word": "marcada",
+      "start": 41.02,
+      "end": 41.44
+    },
+    {
+      "word": "por",
+      "start": 41.44,
+      "end": 41.66
+    },
+    {
+      "word": "tragédia",
+      "start": 41.66,
+      "end": 42.44
+    },
+    {
+      "word": "e",
+      "start": 42.44,
+      "end": 42.56
+    },
+    {
+      "word": "morte",
+      "start": 42.56,
+      "end": 42.8
+    },
+    {
+      "word": "prematura.",
+      "start": 42.8,
+      "end": 43.42
+    },
+    {
+      "word": "A",
+      "start": 44.0,
+      "end": 44.14
+    },
+    {
+      "word": "junção",
+      "start": 44.14,
+      "end": 44.54
+    },
+    {
+      "word": "de",
+      "start": 44.54,
+      "end": 44.72
+    },
+    {
+      "word": "Orione",
+      "start": 44.72,
+      "end": 45.06
+    },
+    {
+      "word": "com",
+      "start": 45.06,
+      "end": 45.24
+    },
+    {
+      "word": "o",
+      "start": 45.24,
+      "end": 45.36
+    },
+    {
+      "word": "Zodíaco",
+      "start": 45.36,
+      "end": 45.94
+    },
+    {
+      "word": "é",
+      "start": 45.94,
+      "end": 46.06
+    },
+    {
+      "word": "uma",
+      "start": 46.06,
+      "end": 46.16
+    },
+    {
+      "word": "história",
+      "start": 46.16,
+      "end": 46.54
+    },
+    {
+      "word": "fascinante,",
+      "start": 46.54,
+      "end": 47.26
+    },
+    {
+      "word": "de",
+      "start": 47.64,
+      "end": 47.8
+    },
+    {
+      "word": "acordo",
+      "start": 47.8,
+      "end": 48.12
+    },
+    {
+      "word": "com",
+      "start": 48.12,
+      "end": 48.42
+    },
+    {
+      "word": "a",
+      "start": 48.42,
+      "end": 48.52
+    },
+    {
+      "word": "mitologia",
+      "start": 48.52,
+      "end": 49.06
+    },
+    {
+      "word": "grega.",
+      "start": 49.06,
+      "end": 49.68
+    },
+    {
+      "word": "Orione",
+      "start": 49.86,
+      "end": 50.28
+    },
+    {
+      "word": "se",
+      "start": 50.28,
+      "end": 50.48
+    },
+    {
+      "word": "casou",
+      "start": 50.48,
+      "end": 50.82
+    },
+    {
+      "word": "com",
+      "start": 50.82,
+      "end": 50.96
+    },
+    {
+      "word": "a",
+      "start": 50.96,
+      "end": 51.08
+    },
+    {
+      "word": "filha",
+      "start": 51.08,
+      "end": 51.38
+    },
+    {
+      "word": "do",
+      "start": 51.38,
+      "end": 51.5
+    },
+    {
+      "word": "Deus",
+      "start": 51.5,
+      "end": 51.7
+    },
+    {
+      "word": "do",
+      "start": 51.7,
+      "end": 51.92
+    },
+    {
+      "word": "céu",
+      "start": 51.92,
+      "end": 52.14
+    },
+    {
+      "word": "Artemisa.",
+      "start": 52.14,
+      "end": 52.9
+    },
+    {
+      "word": "Eles",
+      "start": 53.37,
+      "end": 53.64
+    },
+    {
+      "word": "tiveram",
+      "start": 53.64,
+      "end": 54.06
+    },
+    {
+      "word": "um",
+      "start": 54.06,
+      "end": 54.18
+    },
+    {
+      "word": "filho",
+      "start": 54.18,
+      "end": 54.4
+    },
+    {
+      "word": "chamado",
+      "start": 54.4,
+      "end": 54.72
+    },
+    {
+      "word": "Scorpio,",
+      "start": 54.72,
+      "end": 55.4
+    },
+    {
+      "word": "que",
+      "start": 55.56,
+      "end": 55.68
+    },
+    {
+      "word": "mais",
+      "start": 55.68,
+      "end": 55.9
+    },
+    {
+      "word": "tarde",
+      "start": 55.9,
+      "end": 56.26
+    },
+    {
+      "word": "se",
+      "start": 56.26,
+      "end": 56.52
+    },
+    {
+      "word": "tornou",
+      "start": 56.52,
+      "end": 56.86
+    },
+    {
+      "word": "a",
+      "start": 56.86,
+      "end": 56.94
+    },
+    {
+      "word": "constelação",
+      "start": 56.94,
+      "end": 57.6
+    },
+    {
+      "word": "escorpião.",
+      "start": 57.6,
+      "end": 58.2
+    },
+    {
+      "word": "Agora,",
+      "start": 58.58,
+      "end": 58.88
+    },
+    {
+      "word": "vocês",
+      "start": 59.16,
+      "end": 59.32
+    },
+    {
+      "word": "sabem",
+      "start": 59.32,
+      "end": 59.66
+    },
+    {
+      "word": "o",
+      "start": 59.66,
+      "end": 59.9
+    },
+    {
+      "word": "mito",
+      "start": 59.9,
+      "end": 60.14
+    },
+    {
+      "word": "de",
+      "start": 60.14,
+      "end": 60.24
+    },
+    {
+      "word": "como",
+      "start": 60.24,
+      "end": 60.4
+    },
+    {
+      "word": "Orione",
+      "start": 60.4,
+      "end": 60.86
+    },
+    {
+      "word": "ajudou",
+      "start": 60.86,
+      "end": 61.3
+    },
+    {
+      "word": "a",
+      "start": 61.3,
+      "end": 61.38
+    },
+    {
+      "word": "construir",
+      "start": 61.38,
+      "end": 61.84
+    },
+    {
+      "word": "o",
+      "start": 61.84,
+      "end": 61.98
+    },
+    {
+      "word": "Zodíaco.",
+      "start": 61.98,
+      "end": 62.7
+    },
+    {
+      "word": "Mas",
+      "start": 63.22,
+      "end": 63.4
+    },
+    {
+      "word": "há",
+      "start": 63.4,
+      "end": 63.5
+    },
+    {
+      "word": "uma",
+      "start": 63.5,
+      "end": 63.6
+    },
+    {
+      "word": "pergunta",
+      "start": 63.6,
+      "end": 64.0
+    },
+    {
+      "word": "que",
+      "start": 64.0,
+      "end": 64.24
+    },
+    {
+      "word": "você",
+      "start": 64.24,
+      "end": 64.5
+    },
+    {
+      "word": "pode",
+      "start": 64.5,
+      "end": 64.76
+    },
+    {
+      "word": "estar",
+      "start": 64.76,
+      "end": 65.08
+    },
+    {
+      "word": "fazendo.",
+      "start": 65.08,
+      "end": 65.64
+    },
+    {
+      "word": "Qual",
+      "start": 66.2,
+      "end": 66.3
+    },
+    {
+      "word": "é",
+      "start": 66.3,
+      "end": 66.48
+    },
+    {
+      "word": "o",
+      "start": 66.48,
+      "end": 66.5
+    },
+    {
+      "word": "verdadeiro",
+      "start": 66.5,
+      "end": 67.04
+    },
+    {
+      "word": "significado",
+      "start": 67.04,
+      "end": 67.86
+    },
+    {
+      "word": "do",
+      "start": 67.86,
+      "end": 67.98
+    },
+    {
+      "word": "Zodíaco",
+      "start": 67.98,
+      "end": 68.6
+    },
+    {
+      "word": "para",
+      "start": 68.6,
+      "end": 68.78
+    },
+    {
+      "word": "nós",
+      "start": 68.78,
+      "end": 68.94
+    },
+    {
+      "word": "hoje?",
+      "start": 68.94,
+      "end": 69.42
+    },
+    {
+      "word": "É",
+      "start": 69.9,
+      "end": 70.02
+    },
+    {
+      "word": "apenas",
+      "start": 70.02,
+      "end": 70.4
+    },
+    {
+      "word": "um",
+      "start": 70.4,
+      "end": 70.62
+    },
+    {
+      "word": "passar",
+      "start": 70.62,
+      "end": 70.84
+    },
+    {
+      "word": "tempo",
+      "start": 70.84,
+      "end": 71.36
+    },
+    {
+      "word": "ou",
+      "start": 71.36,
+      "end": 71.62
+    },
+    {
+      "word": "tem",
+      "start": 71.62,
+      "end": 71.84
+    },
+    {
+      "word": "mais",
+      "start": 71.84,
+      "end": 72.16
+    },
+    {
+      "word": "profundidade?",
+      "start": 72.16,
+      "end": 72.94
+    }
+  ]
+}

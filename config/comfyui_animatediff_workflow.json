@@ -1,0 +1,4 @@
+{
+  "__README": "Export do workflow AnimateDiff + img2img da tua instalação. Placeholders: __INPUT_BASENAME__, __CKPT_NAME__, __AD_MODEL__. Se '__PLACEHOLDER__' for true, o pipeline gera clipes com fallback ffmpeg a partir do still.",
+  "__PLACEHOLDER__": true
+}

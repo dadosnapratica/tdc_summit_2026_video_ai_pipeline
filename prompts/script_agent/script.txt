@@ -1,0 +1,10 @@
+Gere um roteiro para narração em PT-BR e descrições visuais por cena em inglês para busca de imagens / ComfyUI.
+
+Regras:
+- "script": texto contínuo para TTS, tom documental, frases claras, 1200–2500 palavras se possível (ajuste à duração alvo se indicada no estado).
+- "scenes": lista de strings; cada item descreve uma cena visual em inglês, alinhada à ordem da narração; 6–12 cenas.
+- Sem markdown na saída JSON.
+
+Formato de resposta (apenas JSON):
+{"script": "...", "scenes": ["Scene 1: ...", "..."]}
+

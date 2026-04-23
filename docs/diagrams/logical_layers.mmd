@@ -1,0 +1,31 @@
+%%{init: {"theme": "neutral", "flowchart": {"curve": "basis"}, "themeVariables": {"fontSize": "14px"}}}%%
+flowchart TB
+  subgraph webTier [experiments_web]
+    SPA[SPA_estatica_HTML_JS]
+  end
+  subgraph bffTier [experiments_bff]
+    BFF[FastAPI_lab_server]
+  end
+  subgraph armTier [experiments_arm]
+    LAB[Adaptadores_lab_por_agente]
+  end
+  subgraph backendTier [experiments_backend]
+    CORE[core_VideoState_LLM_paths]
+    PIPE[pipeline_LangGraph]
+    ACPU[agents_CPU_research_script_asset_tts_metadata_publisher_thumb]
+  end
+  subgraph gpuTier [experiments_gpu]
+    VIS[visual_agent]
+    COMP[composer_agent]
+    COMFY[comfy_client]
+  end
+  SPA --> BFF
+  BFF --> LAB
+  BFF --> ACPU
+  BFF --> CORE
+  LAB --> ACPU
+  LAB --> VIS
+  PIPE --> ACPU
+  PIPE --> VIS
+  PIPE --> COMP
+  VIS --> COMFY

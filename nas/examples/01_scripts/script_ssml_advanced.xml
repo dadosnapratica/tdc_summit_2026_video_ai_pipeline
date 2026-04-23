@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SSML avançado (W3C): ênfase, prosody, sub, break. Suporte real depende do motor TTS; na ElevenLabs, testar no Playground — Multilingual v2 costuma honrar sobretudo <break>. -->
+<speak version="1.0" xml:lang="pt-BR" xmlns="http://www.w3.org/2001/10/synthesis">
+
+  <p>
+    <s>
+      Imagine um <emphasis level="moderate">céu noturno</emphasis>,
+      repleto de <emphasis level="moderate">estrelas brilhantes</emphasis>.
+    </s>
+    <s>
+      Por <emphasis level="strong">séculos</emphasis>, os humanos têm-se perguntado
+      pelo significado dessas luzes celestes.
+    </s>
+    <s>
+      Por vezes, essas estrelas foram associadas a
+      <emphasis level="strong">deuses astrais</emphasis> antigos —
+      figuras que, no imaginário coletivo, influenciavam o curso das vidas.
+    </s>
+  </p>
+
+  <break time="0.55s"/>
+
+  <p>
+    <s>
+      <prosody rate="95%">Hoje,</prosody>
+      vamos <emphasis level="moderate">desvendar os mitos</emphasis> desses deuses
+      e perceber como se relacionam com a nossa
+      <emphasis level="moderate">compreensão moderna da astronomia</emphasis>.
+    </s>
+  </p>
+
+  <break time="0.65s"/>
+
+  <p>
+    <s>
+      Os antigos egípcios viam o Sol como manifestação do deus
+      <emphasis level="moderate"><sub alias="Ra egípcio">Rá</sub></emphasis>,
+      associado ao ciclo vital.
+    </s>
+    <s>
+      Junto da Lua — ligada à deusa
+      <emphasis level="moderate"><sub alias="Ísis">Ísis</sub></emphasis> —
+      moldaram uma <emphasis level="moderate">cosmologia</emphasis>
+      em torno da morada divina.
+    </s>
+    <s>
+      Com as estrelas como referência, anteciparam
+      <emphasis level="moderate">estações do ano</emphasis>
+      e organizaram cultura e calendário.
+    </s>
+  </p>
+
+  <break time="0.5s"/>
+
+  <p>
+    <s>
+      Ou seja: não eram apenas narrativas —
+      eram <emphasis level="strong">estrutura simbólica</emphasis>
+      da sociedade e da religião.
+    </s>
+  </p>
+
+  <break time="0.65s"/>
+
+  <p>
+    <s>
+      Ainda há muito por clarificar.
+      <emphasis level="moderate">Zeus</emphasis>, na tradição grega,
+      simbolizava tempestades e raios; também o firmamento.
+    </s>
+    <s>
+      Essa ligação pode ecoar a observação de que as tempestades
+      <emphasis level="moderate">parecem nascer do céu</emphasis>.
+    </s>
+  </p>
+
+  <break time="0.5s"/>
+
+  <p>
+    <s>
+      A <emphasis level="moderate">astronomia moderna</emphasis> ajuda-nos a reler esses mitos:
+      por exemplo, o alinhamento entre
+      <emphasis level="moderate">previsão das estações</emphasis>
+      e o <emphasis level="moderate">movimento aparente das estrelas</emphasis>.
+    </s>
+  </p>
+
+  <break time="0.7s"/>
+
+  <p>
+    <s>
+      <prosody rate="92%" pitch="-1st">
+        Qual é, afinal, a <emphasis level="moderate">verdade</emphasis>
+        por trás desses deuses astrais?
+      </prosody>
+    </s>
+    <s>
+      É uma pergunta difícil —
+      <break time="0.35s"/>
+      e talvez não precise de uma única resposta.
+    </s>
+  </p>
+
+  <break time="0.45s"/>
+
+  <p>
+    <s>
+      O que importa é lembrar:
+      os mitos nasceram para <emphasis level="moderate">explicar o mundo natural</emphasis>
+      e a experiência humana.
+    </s>
+    <s>
+      Por isso, <emphasis level="strong">ainda hoje</emphasis> podem iluminar —
+      metaforicamente —
+      a nossa relação com o cosmos.
+    </s>
+  </p>
+
+</speak>

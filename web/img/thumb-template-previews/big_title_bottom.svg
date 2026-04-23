@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90" viewBox="0 0 160 90">
+  <rect width="160" height="90" fill="#1e293b"/>
+  <rect x="0" y="52" width="160" height="38" fill="#020617" opacity=".85"/>
+  <text x="14" y="74" fill="#fde047" font-family="system-ui,sans-serif" font-size="11" font-weight="700">BOTTOM</text>
+</svg>

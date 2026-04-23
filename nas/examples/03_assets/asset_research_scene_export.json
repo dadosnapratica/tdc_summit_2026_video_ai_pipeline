@@ -1,0 +1,1050 @@
+{
+  "schema_version": 1,
+  "exported_at": null,
+  "notes": "Exemplo preenchido a partir de paste da UI Image Research (lab). start_s/end_s em segundos. Cenas 5–7 (scene_idx 4–6): extras sem bloco no roteiro de 4 partes — intervalos após 137s são ilustrativos; ajustar se necessário.",
+  "scenes": [
+    {
+      "scene_idx": 0,
+      "scene_label": "Scene 1 — Night sky with stars",
+      "script_part_id": "hook",
+      "start_s": 0,
+      "end_s": 23,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/starry-night-sky-over-rajur-maharashtra-30180664/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/stars-in-the-night-sky-13067022/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/stars-in-the-night-sky-5363190/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/movement-of-stars-in-the-night-sky-in-a-long-exposure-image-17556547/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/starry-night-sky-with-milky-way-and-silhouette-35372578/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/19223486/19223486-uhd_3840_2160_24fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/27303243/12116151_640_360_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/27254149/12103113_640_360_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/29644229/12754225_640_360_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/14369240/14369240-sd_960_540_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/girl-backpack-night-surreal-sky-8257551/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/vectors/shooting-star-sky-night-dark-stars-2024127/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/vectors/astronaut-night-sky-star-7059915/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/milky-way-night-sky-stars-559641/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/astronomy-astrophotgraphy-9937087/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2017/06/28/10339-865412856_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2020/01/25/31569-387675206_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2019/04/03/22555-328624767_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2022/08/06/126925-737187453_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2020/09/08/49377-459436762_large.mp4",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "scene_idx": 1,
+      "scene_label": "Scene 2 — Ancient Egypt, hieroglyphs and temple",
+      "script_part_id": "ancient_gods",
+      "start_s": 23,
+      "end_s": 55,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-egyptian-hieroglyphic-wall-in-qena-36324194/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-egyptian-hieroglyphs-15131498/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-egyptian-temple-interior-with-hieroglyphics-34275836/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-egyptian-inscriptions-20303263/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-egyptian-wall-hieroglyphs-in-temple-34137940/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/32537450/13875799_640_360_24fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/7492693/7492693-sd_640_360_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/7575445/7575445-hd_1280_720_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/7575359/7575359-hd_1920_1080_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/11276525/11276525-hd_2048_860_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/hieroglyph-wall-travel-bird-7883891/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/temple-architecture-buildings-4687909/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/vectors/horus-behdety-winged-disc-32653/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/hieroglyph-light-ancient-temple-5765796/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/hieroglyphics-egypt-egyptian-7462956/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2021/08/24/86267-593601073_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/03/11/203845-922675645_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/06/02/214940_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2015/11/28/1431-147170142_medium.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2017/05/03/8947-215890483_large.mp4",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "scene_idx": 2,
+      "scene_label": "Scene 3 — Lightning, storm clouds and night sky",
+      "script_part_id": "unraveling_myths",
+      "start_s": 55,
+      "end_s": 96,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/a-dark-clouds-12999639/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/lightning-on-the-cloudy-night-sky-15203628/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/lightning-strike-on-night-sky-12232002/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/a-lightning-in-the-sky-12734160/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/lightning-at-night-8633857/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/9278554/9278554-hd_1920_1080_30fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/13205825/13205825-sd_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/35775174/15167865_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/11025478/11025478-hd_1920_1080_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/36012149/15270496_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/lightning-storm-sky-cloud-mountain-7401119/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/lightning-thunder-lightning-storm-1056419/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/thunderstorm-lightning-storm-night-3441687/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/thunderbolt-lightning-weather-storm-1905603/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/city-traffic-storm-weather-2567670/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2017/07/23/10851-226632936_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2018/05/11/16160-269534741_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2022/04/04/112957-696336342_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2025/06/03/283428_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2025/06/03/283426_large.mp4",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "scene_idx": 3,
+      "scene_label": "Scene 4 — Fields, farming and seasons",
+      "script_part_id": "conclusion",
+      "start_s": 96,
+      "end_s": 137,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/egyptian-farmer-with-cattle-in-field-29831899/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/farmer-working-on-field-16622632/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/farmer-working-in-field-16986801/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/aerial-view-of-agricultural-fields-in-patchwork-pattern-36295596/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/egyptian-farmer-with-cows-in-rural-cairo-29831897/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/35644814/15105464_840_360_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/35644813/15105563_840_360_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/20778203/20778203-hd_1280_720_25fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/7575361/7575361-sd_640_360_24fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/11276523/11276523-sd_360_640_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/farmer-wheat-crop-agriculture-2260636/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/vectors/horus-behdety-winged-disc-32653/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/rice-agriculture-vietnam-farmer-9829225/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/star-trails-night-stars-rotation-1846734/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/star-hieroglyphics-egypt-egyptian-7448864/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/03/11/203845-922675645_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2015/11/26/1393-147055573_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2016/01/29/1992-153555258_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2020/07/10/44335-438661935_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2021/08/24/86267-593601073_large.mp4",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "scene_idx": 4,
+      "scene_label": "Scene 5 — Temples, clocks and zodiac imagery",
+      "script_part_id": "scene_5",
+      "start_s": 137,
+      "end_s": 180,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ornate-historical-temple-facade-architecture-35466447/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/close-up-of-venice-s-st-mark-s-clock-tower-zodiac-dial-33565034/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/intricate-terracotta-temple-architecture-in-india-35466448/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-intricately-carved-indian-temple-architecture-35795754/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/ancient-egyptian-hieroglyphics-on-temple-wall-31266743/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/3015501/3015501-sd_640_360_24fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/26866042/12023997_640_360_60fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/29226884/12614754_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/35066439/14853871_640_360_60fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/29104178/12573834_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/aries-star-sign-horoscope-astrology-759382/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/fishes-star-sign-horoscope-759384/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/virgin-star-sign-horoscope-759376/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/scorpio-star-sign-horoscope-759377/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/vectors/fish-zodiac-sign-zodiac-moon-star-2301218/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/04/13/207867_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/02/01/198880-908900282_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2023/11/06/188215-881908473_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/02/20/201293-915375233_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2024/02/04/199293-909903179_large.mp4",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "scene_idx": 5,
+      "scene_label": "Scene 6 — Star trails, telescope and night sky wonder",
+      "script_part_id": "scene_6",
+      "start_s": 180,
+      "end_s": 223,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/falling-stars-in-the-sky-15069879/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/silhouette-of-a-man-looking-at-the-night-sky-8495472/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/silhouette-of-person-standing-near-telescope-8495471/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/stunning-star-trails-captured-in-night-sky-29731847/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/star-trails-in-night-sky-over-saraikela-india-32553216/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/854234/854234-sd_640_360_29fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/31227184/13337835_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/36028182/15278410_640_360_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/6307972/6307972-sd_960_540_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/5428315/5428315-sd_640_360_25fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/earth-planet-space-world-11008/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/moon-sky-luna-craters-lunar-1527501/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/ai-generated-man-astronomy-10228325/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/galaxy-big-bang-explosion-space-11188/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/astronomy-milky-way-constellations-1868065/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2017/08/05/11168-228530158_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2019/02/01/21115-315137069_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2019/09/12/26790-361092012_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2015/10/16/1028-142624363_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2019/02/01/21116-315137080_large.mp4",
+          "selected": false
+        }
+      ]
+    },
+    {
+      "scene_idx": 6,
+      "scene_label": "Scene 7 — Milky Way, stars and night sky",
+      "script_part_id": "scene_7",
+      "start_s": 223,
+      "end_s": 266,
+      "assets": [
+        {
+          "rank": 1,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/stars-in-the-night-sky-13067022/",
+          "selected": false
+        },
+        {
+          "rank": 2,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/starry-night-background-7736064/",
+          "selected": false
+        },
+        {
+          "rank": 3,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/stunning-night-sky-full-of-stars-35114677/",
+          "selected": false
+        },
+        {
+          "rank": 4,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/photo-of-the-milky-way-and-stars-19824837/",
+          "selected": false
+        },
+        {
+          "rank": 5,
+          "source": "pexels",
+          "media_type": "image",
+          "url": "https://www.pexels.com/photo/milky-way-982378/",
+          "selected": false
+        },
+        {
+          "rank": 6,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/15281158/15281158-sd_426_240_30fps.mp4",
+          "selected": true
+        },
+        {
+          "rank": 7,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/30056318/12892190_360_640_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 8,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/27693875/12206858_640_360_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 9,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/32555948/13883089_640_360_60fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 10,
+          "source": "pexels",
+          "media_type": "video",
+          "url": "https://videos.pexels.com/video-files/32349013/13800908_360_640_30fps.mp4",
+          "selected": false
+        },
+        {
+          "rank": 11,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/milky-way-night-sky-stars-559641/",
+          "selected": false
+        },
+        {
+          "rank": 12,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/space-universe-night-sky-sky-fog-11099/",
+          "selected": false
+        },
+        {
+          "rank": 13,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/illustrations/space-rocket-night-cartoon-3262811/",
+          "selected": false
+        },
+        {
+          "rank": 14,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/starry-sky-stars-galaxies-1655503/",
+          "selected": false
+        },
+        {
+          "rank": 15,
+          "source": "pixabay",
+          "media_type": "image",
+          "url": "https://pixabay.com/photos/nevada-desert-nature-landscape-8338929/",
+          "selected": false
+        },
+        {
+          "rank": 16,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2017/06/28/10339-865412856_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 17,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2020/01/25/31569-387675206_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 18,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2022/03/06/109821-685694725_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 19,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2018/10/16/18740-295718426_large.mp4",
+          "selected": false
+        },
+        {
+          "rank": 20,
+          "source": "pixabay",
+          "media_type": "video",
+          "url": "https://cdn.pixabay.com/video/2016/03/05/2381-157901992_large.mp4",
+          "selected": false
+        }
+      ]
+    }
+  ]
+}

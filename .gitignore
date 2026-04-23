@@ -1,0 +1,77 @@
+# OAuth YouTube (credenciais em config/youtube_auth/ — YOUTUBE_AUTH_DIR no lab_server)
+# Manter a pasta, mas não versionar os conteúdos (tokens).
+config/youtube_auth/*
+!config/youtube_auth/
+!config/youtube_auth/.gitkeep
+# Artefactos OAuth planos legado no BFF (não usados pelo código actual)
+bff/.youtube_*.json
+
+# Ambiente e segredos
+.env
+.env.*
+!.env.client
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Pastas grandes / experimentos locais (não versionar no workshop)
+publish_experiments/
+tts_experiments/
+video_compose_experiments/
+audit_experiment_imports.py
+web-backups/
+scripts/
+
+# Artefactos gerados (ajustar se versionar exemplos pequenos em nas/)
+outputs/
+*.wav
+*.mp4
+*.onnx
+*.ckpt
+*.safetensors
+
+# Manter explicitamente todo o conteúdo do `workshop/models/` (mesmo que sejam binários grandes).
+!models/
+!models/**
+
+# Ferramentas / IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs (manter pasta, não versionar conteúdo)
+logs/*
+!logs/
+!logs/.gitkeep
+
+# Lista de Exlusões para o client
+!.env.client
+!nas/examples
+!nas/examples/04_tts/coqui/
+
+# =============================================================================
+# Versionamento de `nas/`
+# =============================================================================
+# Regra geral: `nas/` pode ir para o repo (inclui exemplos e scripts).
+# Exceção: em `nas/jobs/` versionamos só 2 jobs “mais completos” (fixtures),
+# para manter o repo leve.
+
+# Ignora todos os jobs por padrão…
+nas/jobs/*
+
+# …mas mantém estes dois:
+!nas/jobs/x7Vwd2-5w0o_AAdC/
+!nas/jobs/x7Vwd2-5w0o_AAdC/**
+!nas/jobs/mcK6FGX5h6spOxpe/
+!nas/jobs/mcK6FGX5h6spOxpe/**

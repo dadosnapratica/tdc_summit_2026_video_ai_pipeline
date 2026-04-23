@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90" viewBox="0 0 160 90">
+  <rect width="160" height="90" fill="#0f172a"/>
+  <rect x="12" y="12" width="56" height="34" rx="12" fill="#ef4444"/>
+  <text x="28" y="35" fill="#fff" font-family="system-ui,sans-serif" font-size="18" font-weight="800">9</text>
+  <text x="14" y="72" fill="#fde047" font-family="system-ui,sans-serif" font-size="10">IMPACT</text>
+</svg>

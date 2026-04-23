@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "lab_sync": true,
+  "audio_duration_s": 73.3866875,
+  "segments": [
+    {
+      "scene_idx": 0,
+      "script_part_id": "lab_seg_0",
+      "start_s": 0.0,
+      "end_s": 18.42,
+      "caption_text": "Você sabia que Orione, um dos mais famosos astros do zodíaco, tem uma história incrível? Uma história de ajuda e construção. Hoje, vamos explorar o mito de como Orione ajudou a construir o zodíaco. Prepare-se para uma jornada através do tempo e da astronomia.\n\nOrion foi um caçador grego q",
+      "source": "lab_dynamic"
+    },
+    {
+      "scene_idx": 1,
+      "script_part_id": "lab_seg_1",
+      "start_s": 18.42,
+      "end_s": 36.72,
+      "caption_text": "ue morreu jovem, mas sua memória viveu na forma de uma constelação celeste. Acredite-se ou não, o zodíaco tem sua origem em mitos e lendas antigas. E Orion é parte disso.\n\nImagine um homem que viveu há mais de 2 mil anos, e suas ações criaram uma constelação que podemos ver no céu hoje. Is",
+      "source": "lab_dynamic"
+    },
+    {
+      "scene_idx": 2,
+      "script_part_id": "lab_seg_2",
+      "start_s": 36.72,
+      "end_s": 54.72,
+      "caption_text": "so é o mito de Orion. Ele foi um caçador habilidoso e forte, mas sua vida foi marcada por tragédia e morte prematura.\n\nA junção de Orion com o zodíaco é uma história fascinante. De acordo com a mitologia grega, Orion se casou com a filha do Deus do Céu, Artemisa. Eles tiveram um filho cha",
+      "source": "lab_dynamic"
+    },
+    {
+      "scene_idx": 3,
+      "script_part_id": "lab_seg_3",
+      "start_s": 54.72,
+      "end_s": 73.3867,
+      "caption_text": "mado Scorpio, que mais tarde se tornou a constelação escorpião.\n\nAgora, você sabem o mito de como Orione ajudou a construir o zodíaco. Mas há uma pergunta que você pode estar fazendo: Qual é o verdadeiro significado do zodíaco para nós hoje? É apenas um passatempo ou tem mais profundidade?",
+      "source": "lab_dynamic"
+    }
+  ]
+}

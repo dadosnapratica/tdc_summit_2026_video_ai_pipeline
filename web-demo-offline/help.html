@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IA VideoStudio — Ajuda</title>
+    <link rel="stylesheet" href="css/styles.css?v=23" />
+    <style>
+      .doc {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 22px 20px 28px;
+      }
+      .doc h1 {
+        font-size: 1.35rem;
+        font-weight: 800;
+        margin: 0 0 14px;
+        line-height: 1.25;
+      }
+      .doc .lead {
+        color: var(--muted);
+        line-height: 1.65;
+        margin: 0 0 20px;
+        font-size: 0.95rem;
+      }
+      .doc h2 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin: 26px 0 12px;
+        color: var(--text);
+        padding-top: 4px;
+        border-top: 1px solid rgba(36, 48, 76, 0.55);
+      }
+      .doc h2:first-of-type {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      .doc p,
+      .doc li {
+        color: var(--muted);
+        line-height: 1.65;
+        font-size: 0.95rem;
+      }
+      .doc p {
+        margin: 0 0 12px;
+      }
+      .doc ul {
+        margin: 0 0 14px;
+        padding-left: 1.15rem;
+      }
+      .doc li {
+        margin-bottom: 8px;
+      }
+      .doc .flow {
+        display: grid;
+        gap: 10px;
+        margin: 16px 0 8px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        border: 1px solid var(--stroke);
+        background: rgba(6, 10, 20, 0.35);
+      }
+      .doc .flow strong {
+        color: var(--text);
+        font-weight: 700;
+      }
+      .doc .flow span {
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+      .toc {
+        display: grid;
+        gap: 10px;
+        margin: 18px 0 22px;
+      }
+      .toc a {
+        color: var(--brand2);
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+      .toc a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <main class="doc card" style="margin: 18px auto">
+      <h1>Guia do IA VideoStudio</h1>
+      <p class="lead">
+        Este guia é para quem vai usar a ferramenta no dia a dia — sem precisar entender programação ou servidores.
+      </p>
+
+      <div class="toc">
+        <a href="#intro">O que é e como funciona</a>
+        <a href="#fluxo">O fluxo do assistente (wizard)</a>
+        <a href="#fluxo_tab">Aba Fluxo (grafo)</a>
+        <a href="#research">Aba Research</a>
+        <a href="#roteiro">Aba Roteirizador</a>
+        <a href="#scenes">Aba Scenes</a>
+        <a href="#assets">Aba Image Research</a>
+        <a href="#visual">Aba Visual (GPU)</a>
+        <a href="#publisher">Aba Publicar (YouTube + mock)</a>
+      </div>
+
+      <h2 id="intro">O que é o IA VideoStudio</h2>
+      <p>
+        O <strong>IA VideoStudio</strong> (também referido como laboratório ou “video lab” na Ideias Factory) é um
+        ambiente para montar conteúdo de vídeo com apoio de inteligência artificial. Ele reúne, em um só lugar, passos
+        que normalmente estariam espalhados: pesquisa de tendências e referências, escrita de roteiro, divisão em
+        cenas visuais e busca de imagens que combinem com cada cena.
+      </p>
+      <p>
+        A ideia é você ir avançando por etapas claras: cada aba representa uma fase do trabalho. O botão
+        <strong>?</strong> em cada área abre este guia já na parte que explica aquela etapa.
+      </p>
+
+      <h2 id="fluxo">Como funciona o fluxo geral do wizard</h2>
+      <p>
+        Pense no assistente como uma linha de produção: primeiro a visão do pipeline completo, depois as abas da esquerda
+        para a direita.
+      </p>
+      <div class="flow">
+        <div>
+          <strong>Fluxo (aba inicial)</strong>
+          <span>Grafo do pipeline LangGraph no cluster (START → research → … → publisher): responsabilidades e estado
+            por nó — alinhado ao <code>VideoState</code> de produção.</span>
+        </div>
+        <div>
+          <strong>1. Research</strong>
+          <span>Você informa um tema e recebe sugestões inspiradas no que está em alta e no que já performa bem.</span>
+        </div>
+        <div>
+          <strong>2. Roteirizador</strong>
+          <span>A partir do tema (e de um ângulo, se quiser), a ferramenta gera o texto do vídeo e organiza trechos por partes.</span>
+        </div>
+        <div>
+          <strong>3. Scenes</strong>
+          <span>O roteiro vira “cenas” com indicações de tempo e descrições visuais para cada pedaço do vídeo.</span>
+        </div>
+        <div>
+          <strong>4. Image Research</strong>
+          <span>Para cada cena, você busca imagens de referência; o sistema ajuda a destacar uma opção principal entre várias.</span>
+        </div>
+        <div>
+          <strong>5. Visual / Compor</strong>
+          <span>TTS (Kokoro ou Piper com vozes do catálogo + pasta local), clipes, vídeo final; opcional ASR (legendas) no mesmo job.</span>
+        </div>
+        <div>
+          <strong>6. Publicar</strong>
+          <span>Metadados com LLM opcional, OAuth YouTube e upload real do <code>final.mp4</code> (com confirmação) ou simulação local.</span>
+        </div>
+      </div>
+      <p>
+        Não é obrigatório começar pelo Research: você pode digitar tema e ângulo direto no Roteirizador. Porém, usar o
+        Research primeiro costuma dar ideias mais alinhadas ao que o público já está buscando.
+      </p>
+
+      <h2 id="fluxo_tab">Aba Fluxo (grafo)</h2>
+      <p>
+        A aba <strong>Fluxo</strong> mostra o pipeline completo orquestrado em LangGraph (START → agentes → fim), alinhado ao
+        <code>VideoState</code> do projeto, e à direita um <strong>ramo opcional do laboratório</strong> (linha tracejada):
+        transcrição ASR → segmentação temporal → recomposição sincronizada (<code>final_synced.mp4</code>). Passe o mouse
+        sobre cada nó para ver um <strong>tooltip</strong>. As outras abas permitem exercitar passos reais no BFF (Research,
+        Roteiro, Scenes, Image Research, Visual, Compor vídeo com TTS/composer/ASR/sincronismo avançado, Publicar). Isto não
+        substitui o executável <code>scripts/run_pipeline.py</code>, mas espelha os mesmos agentes onde implementado.
+      </p>
+
+      <h2 id="research">Aba Research</h2>
+      <p>
+        Aqui você explora <strong>o que as pessoas estão procurando</strong> e <strong>quais vídeos já chamam atenção</strong>
+        na região e na categoria que você escolher. Digite uma palavra-chave ou tema central e clique em
+        <strong>Buscar sugestões</strong>. Os resultados aparecem em duas sub-abas: <strong>Vídeos</strong> (YouTube Data API, estável) e
+        <strong>Trends</strong> (pesquisas relacionadas em alta e no top, série temporal via pytrends — sinal exploratório; dados podem vir esparsos ou vazios).
+      </p>
+      <ul>
+        <li><strong>Região</strong>: escolha o país ou mercado que mais importa para o seu canal — isso muda o “clima” das sugestões.</li>
+        <li><strong>Categoria</strong>: ajuda a focar no tipo de vídeo (ciência, entretenimento, educação, etc.).</li>
+      </ul>
+      <p>
+        Cada cartão na lista é uma ideia clicável. Ao usar <strong>Usar no roteirizador</strong>, o tema (e às vezes o
+        ângulo) são preenchidos na próxima aba para você continuar sem redigitar tudo.
+      </p>
+      <p>
+        Nos resultados de vídeo do YouTube, o cartão lembra o feed: miniatura, título e canal. Você pode tocar em
+        <strong>reproduzir</strong> para ver o vídeo ali mesmo (quando o criador permite incorporar no site) ou abrir
+        direto no YouTube. A descrição aparece em resumo, com <strong>Ver mais</strong> para expandir o texto completo.
+      </p>
+
+      <h2 id="roteiro">Aba Roteirizador</h2>
+      <p>
+        É onde o vídeo ganha <strong>texto falado</strong> em português. Preencha o <strong>tema</strong> e, se quiser, um
+        <strong>ângulo</strong> — por exemplo, “mitos que todo mundo acredita” ou “5 curiosidades que pouca gente sabe”.
+      </p>
+      <ul>
+        <li><strong>Sugerir ângulos</strong>: gera ideias de abordagem quando você ainda não decidiu como contar a história.</li>
+        <li>
+          <strong>Duração (narração alvo)</strong>: escolha o perfil (curta até ~1 min 30, média ~5 min, longa 10–15 min,
+          muito longa 20–30 min) ou <strong>personalizada</strong> em minutos (1–60).
+          <br />
+          <strong>Importante:</strong> o tempo é uma <em>estimativa</em> baseada no texto (o ritmo de narração e pausas variam).
+          Em geral, <strong>quanto maior o texto</strong>, <strong>mais cenas</strong> (prompts) serão geradas — e isso tende a aumentar
+          o tempo de produção/processamento (assets, geração visual, composição, etc.).
+          <br />
+          Com Ollama ativo, o perfil orienta o tamanho do texto e o número de cenas; a resposta JSON inclui o bloco <code>duration</code>
+          com as faixas usadas.
+        </li>
+        <li><strong>Usar Ollama</strong>: quando disponível na sua instalação, usa um modelo de linguagem local para textos e sugestões mais ricas.</li>
+        <li><strong>Gerar</strong>: produz o roteiro completo, os trechos por parte e envia você automaticamente para a aba Scenes.</li>
+      </ul>
+      <p>
+        O painel <strong>Roteiro base</strong> mostra o texto corrido; <strong>Textos por parte</strong> divide o mesmo
+        conteúdo em blocos menores, úteis para revisar ou adaptar por capítulos.
+      </p>
+
+      <h2 id="scenes">Aba Scenes</h2>
+      <p>
+        Depois de gerar o roteiro, esta aba lista as <strong>cenas</strong>: cada uma com um trecho de tempo sugerido e
+        uma descrição do que deveria aparecer na tela. Isso funciona como um roteiro visual para o editor ou para
+        ferramentas de imagem.
+      </p>
+      <p>
+        Use <strong>Usar no Image Research</strong> em uma cena para copiar a descrição visual para a última aba e já
+        começar a buscar imagens alinhadas àquela parte do vídeo. O botão <strong>Usar 1ª cena no Image Research</strong>
+        faz o mesmo com a primeira cena da lista.
+      </p>
+
+      <h2 id="assets">Aba Image Research</h2>
+      <p>
+        O Image Research tem dois modos (sub-abas internas):
+      </p>
+      <ul>
+        <li>
+          <strong>Automático (padrão)</strong>: pesquisa assets para <strong>todas</strong> as cenas e mostra os
+          <strong>selecionados por cena</strong>. É o caminho mais rápido para montar um pacote inicial.
+        </li>
+        <li>
+          <strong>Manual (por cena)</strong>: você escolhe uma cena numa lista (dropdown) e faz a pesquisa só para ela,
+          podendo <strong>trocar manualmente</strong> o asset selecionado. Ao editar uma seleção do modo Automático, o
+          sistema abre automaticamente o modo Manual para aquela cena.
+        </li>
+      </ul>
+      <p>
+        Ao pesquisar, você vê uma lista de <strong>candidatos</strong> e, em destaque, o <strong>Selecionado</strong>.
+        Você pode escolher outro candidato via botão <strong>Selecionar</strong>. As escolhas (automáticas ou manuais)
+        ficam persistidas no estado local da aplicação.
+      </p>
+
+      <h2 id="visual">Aba Visual (GPU)</h2>
+      <p>
+        Esta aba chama o endpoint <code>/api/visual_agent/preview</code>, que executa o mesmo fluxo de
+        <code>agents.visual_agent</code> para <strong>uma</strong> imagem: cópia/download, envio ao ComfyUI quando o
+        workflow real e as variáveis (<code>COMFYUI_BASE_URL</code>, <code>COMFYUI_INPUT_METHOD</code>,
+        <code>COMFYUI_INPUT_DIR</code> se usar <code>copy</code>) estão corretos;
+        caso contrário, usa <strong>ffmpeg</strong> para gerar um clipe curto a partir do still.
+      </p>
+      <p>
+        Use <strong>Usar imagem selecionada</strong> para preencher a URL com o primeiro asset escolhido no Image Research
+        (por ordem de <code>scene_idx</code>). O vídeo devolvido pode ser reproduzido na própria página.
+      </p>
+
+      <h2 id="composer">Aba Compor vídeo</h2>
+      <p>
+        Passos no servidor (mesmo <code>job_token</code>): <strong>1. TTS</strong> (<code>/api/tts_agent/preview</code>)
+        gera <code>narration.wav</code>; <strong>2. Visual</strong>
+        (<code>/api/visual_agent/batch</code>) gera clipes por cena;
+        <strong>3. Composer</strong> (<code>/api/composer_agent/preview</code>) monta <code>final.mp4</code>;
+        <strong>4. ASR</strong> (<code>POST /api/lab/asr</code>) opcional — faster-whisper gera <code>narration_asr.vtt</code>, <code>.srt</code> e <code>asr_words.json</code> no job (o pipeline avançado com timeline/fixtures continua em <code>workshop/video_compose_experiments/</code> fora desta SPA).
+      </p>
+      <p>
+        <strong>Kokoro</strong>: escolha idioma, voz e velocidade. <strong>Piper</strong>: a lista de modelos vem do catálogo em
+        <code>workshop/tts_experiments/data/piper_hf_voice_catalog.json</code> combinado com ficheiros <code>*.onnx</code> em
+        <code>PIPER_VOICES_DIR</code> (variável de ambiente no BFF). O Streamlit em <code>workshop/tts_experiments/</code> é a bancada de comparação de vozes; aqui usa-se o mesmo <code>agents.tts_agent</code> com <code>PIPER_MODEL</code> por pedido.
+      </p>
+
+      <h2 id="publisher">Aba Publicar (YouTube + mock)</h2>
+      <p>
+        Revisão de metadados (título, descrição, tags), thumbnail mock, OAuth para <strong>listar canais</strong>, e
+        <strong>Gerar metadados (LLM)</strong> via <code>POST /api/metadata_agent/preview</code> (mesma lógica que <code>agents/metadata_agent</code>).
+        O campo <strong>Job</strong> replica o token da aba Compor (há <code>final.mp4</code> nesse job).
+      </p>
+      <ul>
+        <li>
+          <strong>Conectar YouTube</strong>: abre o consentimento Google; o token fica no servidor do BFF (cookie de sessão do lab).
+        </li>
+        <li>
+          <strong>Enviar ao YouTube (OAuth)</strong>: chama <code>POST /api/youtube/upload</code> com o vídeo do job. Um
+          <strong>modal de confirmação</strong> mostra resumo (título, canal, privacidade conforme <code>PUBLISH_PRIVACY_STATUS</code> no servidor, tipicamente <code>private</code>) antes do envio.
+        </li>
+        <li>
+          <strong>Simular publicação (mock)</strong>: apenas estado local, sem <code>videos.insert</code>.
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

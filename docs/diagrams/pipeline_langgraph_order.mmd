@@ -1,0 +1,12 @@
+%%{init: {"theme": "neutral", "flowchart": {"curve": "linear"}}}%%
+flowchart TD
+  START([START]) --> research[research_agent_ARM]
+  research --> script[script_agent_ARM]
+  script --> asset[asset_agent_ARM]
+  asset --> visual[visual_agent_GPU]
+  visual --> tts[tts_agent_ARM]
+  tts --> composer[composer_agent_GPU]
+  composer --> metadata[metadata_agent_ARM]
+  metadata --> thumb[thumbnail_card_agent_ARM]
+  thumb --> publisher[publisher_agent_ARM]
+  publisher --> ENDN([END])

@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "generated_at": "2026-04-20T07:52:31.700155+00:00",
+  "channel_niche": "astronomia e espaço",
+  "paths": {
+    "06_meta": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/06_meta",
+    "07_thumbnail": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/07_thumbnail",
+    "08_video_card": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/08_video_card"
+  },
+  "video": {
+    "path": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/05_video/fixture_compose_final.mp4",
+    "filename": "fixture_compose_final.mp4",
+    "exists": true,
+    "size_bytes": 26812013
+  },
+  "subtitles": {
+    "srt_path": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/05_video/aligned_index.srt"
+  },
+  "metadata": {
+    "title": "astronomia e espaço",
+    "description": "Imagine um céu noturno, repleto de estrelas brilhantes (astronomia e espaço)\n\nImagine um céu noturno, repleto de estrelas brilhantes. Por séculos, humanos têm se perguntado sobre o significado dessas luzes celestes. Em alguns casos, essas estrelas foram associadas a deuses astrais antigos, que exerciam influência sobre as vidas das pessoas. Hoje, vamos desvendar os mitos desses deuses e compreender melhor como eles se encaixam na nossa compreensão moderna da astronomia.  Os antigos egípcios…\n\n0:00 Hook\n0:22 Ancient Gods\n0:47 Unraveling Myths\n1:19 Conclusion",
+    "tags": []
+  },
+  "thumbnail": {
+    "manifest_path": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/07_thumbnail/thumbnail_manifest.json",
+    "png_by_concept": {
+      "1": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/07_thumbnail/thumbnail_concept_1.png"
+    }
+  },
+  "card": {
+    "template_id": "ideias_dark",
+    "title_on_card": "astronomia e espaço",
+    "html_path": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/08_video_card/card_ideias_dark.html",
+    "png_path": "/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/fixtures/08_video_card/card_ideias_dark.png"
+  },
+  "publish": {
+    "privacy_status": "private",
+    "category_id": "28",
+    "preselected_channel_id": null,
+    "manual_review_required": true,
+    "notes": "Validar artefactos em 06_meta, 07_thumbnail e 08_video_card antes do upload."
+  }
+}

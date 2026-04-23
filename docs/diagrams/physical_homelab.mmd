@@ -1,0 +1,26 @@
+%%{init: {"theme": "neutral", "flowchart": {"curve": "basis"}}}%%
+flowchart LR
+  subgraph pi [Pi_orquestrador_ARM]
+    CLI[run_pipeline_CLI]
+    BFFp[BFF_uvicorn_opcional]
+    NFSm[NFS_cliente_jobs]
+  end
+  subgraph gpu [gpu_server]
+    OLL[Ollama_HTTP]
+    COMFY[ComfyUI_API]
+    FF[ffmpeg_NVENC]
+  end
+  subgraph ideias [ideias_server_opcional]
+    PG[(PostgreSQL)]
+    MON[Prometheus_Grafana]
+  end
+  subgraph nas [Storage]
+    NFS[(NFS_mnt_nas_work)]
+  end
+  CLI --> OLL
+  BFFp --> OLL
+  BFFp --> COMFY
+  CLI --> NFSm
+  NFSm --> NFS
+  COMFY --> FF
+  BFFp -.-> PG

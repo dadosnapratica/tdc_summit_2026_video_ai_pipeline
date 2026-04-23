@@ -1,0 +1,27 @@
+%%{init: {"theme": "neutral", "sequence": {"mirrorActors": false}}}%%
+sequenceDiagram
+  autonumber
+  participant Inv as Invoker_CLI
+  participant G as LangGraph_graph
+  participant Cpu as Nos_CPU_experiments_backend
+  participant Gpu as Nos_GPU_experiments_gpu
+  participant Ext as Servicos_HTTP_Ollama_Comfy_APIs
+  Inv->>G: invoke VideoState_inicial
+  G->>Cpu: research_agent
+  Cpu->>Ext: YouTube_Trends_Ollama
+  G->>Cpu: script_agent
+  Cpu->>Ext: Ollama
+  G->>Cpu: asset_agent
+  Cpu->>Ext: Pexels_Pixabay_Ollama
+  G->>Gpu: visual_agent
+  Gpu->>Ext: ComfyUI_ou_ffmpeg
+  G->>Cpu: tts_agent
+  Cpu->>Ext: Kokoro_Piper_local
+  G->>Gpu: composer_agent
+  Gpu->>Ext: ffmpeg_NVENC
+  G->>Cpu: metadata_agent
+  Cpu->>Ext: Ollama
+  G->>Cpu: thumbnail_card_agent
+  G->>Cpu: publisher_agent
+  Cpu->>Ext: YouTube_Data_API
+  G-->>Inv: VideoState_final

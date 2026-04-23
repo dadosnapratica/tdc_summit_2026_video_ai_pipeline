@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="90" viewBox="0 0 160 90">
+  <rect width="160" height="90" fill="#0f172a"/>
+  <rect x="0" y="0" width="82" height="90" fill="#020617" opacity=".92"/>
+  <text x="12" y="48" fill="#fde047" font-family="system-ui,sans-serif" font-size="10" font-weight="700">BIG · LEFT</text>
+</svg>

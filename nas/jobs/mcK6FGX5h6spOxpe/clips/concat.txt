@@ -1,0 +1,6 @@
+file '/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/nas/jobs/mcK6FGX5h6spOxpe/clips/scene_00.mp4'
+file '/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/nas/jobs/mcK6FGX5h6spOxpe/clips/scene_01.mp4'
+file '/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/nas/jobs/mcK6FGX5h6spOxpe/clips/scene_02.mp4'
+file '/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/nas/jobs/mcK6FGX5h6spOxpe/clips/scene_03.mp4'
+file '/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/nas/jobs/mcK6FGX5h6spOxpe/clips/scene_04.mp4'
+file '/Users/flaviolopes/projects/ideiasfactory/tdc_summit_2026/video_ai_pipeline/workshop/nas/jobs/mcK6FGX5h6spOxpe/clips/scene_05.mp4'

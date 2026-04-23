@@ -1,0 +1,35 @@
+# Workshop: dependências do laboratório (BFF + backend + gpu + arm) + testes locais.
+# Instalar a partir da raiz do monorepo: pip install -r workshop/requirements.txt
+
+# ── Orquestração / pipeline ─────────────────────────────────────────────────
+langgraph>=0.2.0
+langchain-core>=0.2.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+ollama>=0.2.0
+openai>=1.0.0
+anthropic>=0.25.0
+
+# ── Google / YouTube (research + publisher) ────────────────────────────────
+google-api-python-client>=2.0.0
+google-auth-oauthlib>=1.2.0
+google-auth-httplib2>=0.2.0
+pytrends>=4.9.2
+
+# ── TTS / multimédia ───────────────────────────────────────────────────────
+kokoro-onnx>=0.3.0
+numpy>=1.26.0
+moviepy>=1.0.3
+
+# ── Web / laboratório ─────────────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn>=0.30.0
+matplotlib>=3.8.0
+pillow>=10.0.0
+
+# ── ASR (legendas) ─────────────────────────────────────────────────────────
+# Usado por POST /api/lab/asr (workshop/video_compose_experiments/asr_export.py)
+faster-whisper>=1.0.0
+
+# ── Testes (opcional) ──────────────────────────────────────────────────────
+pytest>=8.0.0
