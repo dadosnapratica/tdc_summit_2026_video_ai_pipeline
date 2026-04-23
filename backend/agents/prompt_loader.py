@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from workshop.backend.runtime_paths import monorepo_root
+from backend.runtime_paths import monorepo_root
 
 # workshop/backend/agents/prompt_loader.py → parents[2] == pasta workshop/
 _WORKSHOP_ROOT = Path(__file__).resolve().parents[2]

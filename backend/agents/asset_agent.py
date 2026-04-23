@@ -8,21 +8,21 @@ from typing import Any, Dict, List
 
 import requests
 
-from workshop.backend.agents.asset_sources import (
+from backend.agents.asset_sources import (
     DEFAULT_STYLE_GUIDE,
     SearchConfig,
     heuristic_best,
     resolve_asset_research_preference_from_env,
     search_all_for_scene,
 )
-from workshop.backend.agents.prompt_loader import load_prompt
-from workshop.backend.core.json_utils import parse_llm_json_safe
-from workshop.backend.core.llm_gateway import llm
-from workshop.backend.core.paths import make_job_path
+from backend.agents.prompt_loader import load_prompt
+from backend.core.json_utils import parse_llm_json_safe
+from backend.core.llm_gateway import llm
+from backend.core.paths import make_job_path
 
 # Re-export para `scripts/run_pipeline.py` (contrato documentado em `.cursorrules`).
 __all__ = ["asset_agent", "make_job_path"]
-from workshop.backend.core.state import VideoState
+from backend.core.state import VideoState
 
 logger = logging.getLogger(__name__)
 

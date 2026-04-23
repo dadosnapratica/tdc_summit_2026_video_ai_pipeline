@@ -10,7 +10,7 @@ from typing import Any, Dict, List, Optional, Sequence
 
 import requests
 from dotenv import load_dotenv
-from workshop.backend.agents.prompt_loader import load_prompt
+from backend.agents.prompt_loader import load_prompt
 
 logger = logging.getLogger(__name__)
 

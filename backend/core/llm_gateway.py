@@ -9,7 +9,7 @@ import requests
 
 logger = logging.getLogger(__name__)
 
-from workshop.backend.core.correlation import get_correlation_id
+from backend.core.correlation import get_correlation_id
 
 def _maybe_auth_headers_for_ollama(base_url: str) -> dict:
     tok = (os.getenv("WORKSHOP_ACCESS_TOKEN") or "").strip().strip('"')
@@ -110,7 +110,7 @@ llm = LLMGateway()
 
 def chat_json_object(prompt: str, *, system: str = "") -> dict:
     """Chama o LLM e interpreta a resposta como um único objeto JSON."""
-    from workshop.backend.core.json_utils import parse_llm_json
+    from backend.core.json_utils import parse_llm_json
 
     raw = llm.chat(prompt, system)
     return parse_llm_json(raw)

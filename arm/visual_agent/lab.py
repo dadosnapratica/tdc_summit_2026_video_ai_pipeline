@@ -22,8 +22,8 @@ from urllib.parse import urlparse
 
 import requests
 
-from workshop.backend.core.state import VideoState
-from workshop.gpu.agents.visual_agent import (
+from backend.core.state import VideoState
+from gpu.agents.visual_agent import (
     explain_comfy_skip_reason,
     resolve_use_comfy_ui,
     visual_agent,

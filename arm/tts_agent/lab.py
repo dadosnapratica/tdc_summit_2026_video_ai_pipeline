@@ -6,8 +6,8 @@ import logging
 import os
 from typing import Any, Dict
 
-from workshop.backend.agents.tts_agent import tts_agent
-from workshop.backend.core.state import VideoState
+from backend.agents.tts_agent import tts_agent
+from backend.core.state import VideoState
 
 logger = logging.getLogger(__name__)
 

@@ -9,7 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import requests
 
-from workshop.arm.research_agent.providers.youtube_data import get_videos_by_topic
+from arm.research_agent.providers.youtube_data import get_videos_by_topic
 
 logger = logging.getLogger(__name__)
 
@@ -245,7 +245,7 @@ def build_research_pack(
 
     trends: Dict[str, Any] = {}
     try:
-        from workshop.arm.research_agent.providers.pytrends_experiment import (
+        from arm.research_agent.providers.pytrends_experiment import (
             TrendsConfig,
             fetch_google_trends_signals,
         )

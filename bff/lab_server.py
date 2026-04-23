@@ -23,27 +23,27 @@ from starlette.responses import Response as StarletteResponse
 # Evitar vazar detalhes sensíveis (paths, tokens, stack) em respostas HTTP.
 logger = logging.getLogger(__name__)
 
-from workshop.backend.dotenv_loader import load_workshop_dotenv
+from backend.dotenv_loader import load_workshop_dotenv
 
 load_workshop_dotenv(here=Path(__file__).resolve())
 
 _EXPERIMENTS_ROOT = Path(__file__).resolve().parents[1]
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 
-from workshop.backend.core.correlation import set_correlation_id  # noqa: E402
+from backend.core.correlation import set_correlation_id  # noqa: E402
 from .logging_setup import configure_logging  # noqa: E402
 
-from workshop.arm.asset_agent.search import DEFAULT_STYLE_GUIDE as IMAGE_DEFAULT_STYLE_GUIDE  # noqa: E402
-from workshop.arm.asset_agent.search import SearchConfig, search_assets_for_scene  # noqa: E402
-from workshop.arm.research_agent.youtube_trends_research import build_research_pack  # noqa: E402
-from workshop.arm.script_agent.generate import generate_script, suggest_angles  # noqa: E402
-from workshop.arm.composer_agent.lab import run_composer_lab  # noqa: E402
-from workshop.arm.tts_agent.lab import run_tts_lab  # noqa: E402
-from workshop.arm.visual_agent.lab import run_visual_batch, run_visual_lab  # noqa: E402
-from workshop.backend.agents.metadata_agent import metadata_agent  # noqa: E402
-from workshop.backend.agents.thumbnail_card_agent import thumbnail_card_agent  # noqa: E402
-from workshop.backend.core.state import VideoState  # noqa: E402
-from workshop.backend.core.tts_provider_config import (  # noqa: E402
+from arm.asset_agent.search import DEFAULT_STYLE_GUIDE as IMAGE_DEFAULT_STYLE_GUIDE  # noqa: E402
+from arm.asset_agent.search import SearchConfig, search_assets_for_scene  # noqa: E402
+from arm.research_agent.youtube_trends_research import build_research_pack  # noqa: E402
+from arm.script_agent.generate import generate_script, suggest_angles  # noqa: E402
+from arm.composer_agent.lab import run_composer_lab  # noqa: E402
+from arm.tts_agent.lab import run_tts_lab  # noqa: E402
+from arm.visual_agent.lab import run_visual_batch, run_visual_lab  # noqa: E402
+from backend.agents.metadata_agent import metadata_agent  # noqa: E402
+from backend.agents.thumbnail_card_agent import thumbnail_card_agent  # noqa: E402
+from backend.core.state import VideoState  # noqa: E402
+from backend.core.tts_provider_config import (  # noqa: E402
     tts_provider_effective,
     tts_providers_enabled,
 )
@@ -114,7 +114,7 @@ Variáveis de ambiente relevantes: `YOUTUBE_API_KEY`, `OLLAMA_BASE_URL`, `PEXELS
 @asynccontextmanager
 async def _lifespan(_app: FastAPI) -> AsyncIterator[None]:
     configure_logging()
-    from workshop.backend.config_validation import validate_workshop_configuration
+    from backend.config_validation import validate_workshop_configuration
 
     report = validate_workshop_configuration()
     logger.warning("workshop_config_validation %s", json.dumps(report, ensure_ascii=False))

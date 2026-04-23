@@ -11,9 +11,9 @@ from typing import Any, Dict, List, Optional
 
 import requests
 
-from workshop.backend.runtime_paths import monorepo_root
-from workshop.backend.core.state import VideoState
-from workshop.gpu.agents.comfy_client import (
+from backend.runtime_paths import monorepo_root
+from backend.core.state import VideoState
+from gpu.agents.comfy_client import (
     collect_output_files,
     submit_prompt,
     upload_image_to_input,

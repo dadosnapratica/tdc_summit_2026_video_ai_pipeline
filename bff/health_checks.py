@@ -10,7 +10,7 @@ import os
 import time
 from typing import Any, Dict
 
-from workshop.backend.config_validation import remote_health_probe_timeout
+from backend.config_validation import remote_health_probe_timeout
 
 
 def _masked_env_set(name: str) -> bool:

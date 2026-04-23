@@ -8,8 +8,8 @@ import struct
 import subprocess
 import wave
 
-from workshop.backend.core.state import VideoState
-from workshop.backend.core.tts_provider_config import tts_provider_effective
+from backend.core.state import VideoState
+from backend.core.tts_provider_config import tts_provider_effective
 
 logger = logging.getLogger(__name__)
 

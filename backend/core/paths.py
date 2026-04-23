@@ -18,7 +18,7 @@ def make_job_path(niche: str) -> str:
     base = os.getenv("PIPELINE_JOBS_PATH", "").strip()
     if not base:
         try:
-            from workshop.backend.runtime_paths import monorepo_root
+            from backend.runtime_paths import monorepo_root
 
             base = str(monorepo_root() / "workshop" / "nas" / "jobs")
         except Exception as e:

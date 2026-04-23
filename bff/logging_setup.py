@@ -5,7 +5,7 @@ import os
 from logging.handlers import TimedRotatingFileHandler
 from pathlib import Path
 
-from workshop.backend.core.correlation import get_correlation_id
+from backend.core.correlation import get_correlation_id
 
 
 class CorrelationIdFilter(logging.Filter):

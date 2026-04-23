@@ -6,7 +6,7 @@ import os
 import subprocess
 from typing import List
 
-from workshop.backend.core.state import VideoState
+from backend.core.state import VideoState
 
 logger = logging.getLogger(__name__)
 

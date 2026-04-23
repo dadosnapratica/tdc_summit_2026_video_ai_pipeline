@@ -16,7 +16,7 @@ from typing import Any, Dict, Optional, Tuple
 
 from PIL import Image, ImageDraw, ImageFont
 
-from workshop.backend.core.state import VideoState
+from backend.core.state import VideoState
 
 logger = logging.getLogger(__name__)
 

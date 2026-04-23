@@ -1,4 +1,4 @@
-from workshop.arm.asset_agent.search import (
+from arm.asset_agent.search import (
     DEFAULT_STYLE_GUIDE,
     SearchConfig,
     search_assets_for_scene,

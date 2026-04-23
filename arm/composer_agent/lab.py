@@ -8,8 +8,8 @@ import os
 import re
 from typing import Any, Dict, List
 
-from workshop.backend.core.state import VideoState
-from workshop.gpu.agents.composer_agent import composer_agent
+from backend.core.state import VideoState
+from gpu.agents.composer_agent import composer_agent
 
 logger = logging.getLogger(__name__)
 

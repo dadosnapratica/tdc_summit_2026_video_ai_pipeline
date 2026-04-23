@@ -4,10 +4,10 @@ from __future__ import annotations
 import logging
 from typing import Any, List
 
-from workshop.backend.agents.prompt_loader import load_prompt
-from workshop.backend.core.json_utils import parse_llm_json_safe
-from workshop.backend.core.llm_gateway import llm
-from workshop.backend.core.state import VideoState
+from backend.agents.prompt_loader import load_prompt
+from backend.core.json_utils import parse_llm_json_safe
+from backend.core.llm_gateway import llm
+from backend.core.state import VideoState
 
 logger = logging.getLogger(__name__)
 
